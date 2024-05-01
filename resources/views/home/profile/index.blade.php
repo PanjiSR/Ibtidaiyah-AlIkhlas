@@ -32,7 +32,7 @@
     <div class="container">
         <div class="row">
             <h2 class="fw-bold">STRUKTUR ORGANISASI YAYASAN MADRASAH IBTIDAIYAH</h2>
-            {{-- <img src="/img/struktur.jpg" class="img-fluid" alt=""> --}}
+            <img src="/img/strukturbaru.png" class="img-fluid" alt="">
         </div>
     </div>
 </div>
@@ -58,7 +58,7 @@
         </div>
         <div class="row">
             <div class="col-5">
-
+                <img src="/img/detail-murid.png" alt="">
             </div>
             <div class="col-5">
 

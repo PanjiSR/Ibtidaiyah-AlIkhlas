@@ -45,7 +45,7 @@ class AdminUserController extends Controller
         $data = $request->validate([
             'name' => 'required',
             'email' => 'required|unique:users',
-            'password' => 'required',
+            'password' => 'required|min:3',
             're_password' => 'required|same:password',
         ]);
 
@@ -69,6 +69,12 @@ class AdminUserController extends Controller
     public function edit(string $id)
     {
         //
+        $data = [
+            'title' => 'Edit User',
+            'user' => User::find($id),
+            'content' => 'admin/user/add'
+        ];
+        return view('admin.layouts.wrapper', $data);
     }
 
     /**
@@ -77,6 +83,22 @@ class AdminUserController extends Controller
     public function update(Request $request, string $id)
     {
         //
+        $user = User::find($id);
+        $data = $request->validate([
+            'name' => 'required',
+            'email' => 'required|unique:users,email,' . $user->id,
+            // 'password' => 'min:3',
+            're_password' => 'same:password',
+        ]);
+
+        
+        if($request->password) {
+            $data['password'] = Hash::make($data['password']);
+        }else{
+            $data['password'] = $user->password;
+        }
+        $user->update($data);
+        return redirect('/admin/user');
         
     }
 
@@ -86,5 +108,9 @@ class AdminUserController extends Controller
     public function destroy(string $id)
     {
         //
+        $user = User::find($id);
+        $user->delete();
+        return redirect('/admin/user');
+
     }
 }

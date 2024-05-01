@@ -2,11 +2,18 @@
     <div class="col-md-6">
         <div class="card">
             <div class="card-body">
+
+                @if (isset ($user))
+                <form action="/admin/user/{{$user->id}}" method="POST">
+                    @method('PUT')
+                @else
                 <form action="/admin/user" method="POST">
+                    
+                @endif
                     @csrf
                     <div class="form-group">
                         <label for="">Username</label>
-                        <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Username" value="{{ old('name') }}">
+                        <input type="text" name="name" class="form-control @error('name') is-invalid @enderror" placeholder="Username" value="{{ isset($user) ? $user->name :  old('name') }}">
                         @error('name')
                             <div class="invalid-feedback">
                                 {{ $message }}
@@ -15,7 +22,7 @@
                     </div>
                     <div class="form-group">
                         <label for="">Email</label>
-                        <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" value="{{ old('email') }}">
+                        <input type="email" name="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" value="{{ isset($user) ? $user->email : old('email') }}">
                         @error('email')
                         <div class="invalid-feedback">
                             {{ $message }}

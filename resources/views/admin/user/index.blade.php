@@ -16,8 +16,16 @@
                         <td>{{ $item->name }}</td>
                         <td>{{ $item->email }}</td>
                         <td>
-                            <a href="/admin/user/{{ $item->id }}" class="btn btn-success">Edit</a>
-                            <a href="#" class="btn btn-danger">Hapus</a>
+                            <div class="d-flex">
+                            <a href="/admin/user/{{ $item->id }}/edit" class="btn btn-success mx-2">Edit</a>
+
+                            <form action="/admin/user/{{ $item->id }}" method="POST">
+                                @method('delete')
+                                @csrf
+                                <button type="submit" class="btn btn-danger">Hapus</button>
+                            </form>
+                            </div>
+                            {{-- <a href="#" class="btn btn-danger">Hapus</a> --}}
                         </td>
                     </tr>
                     @endforeach
