@@ -42,31 +42,19 @@
       <div class="carousel-inner">
         
         <div class="carousel-item active">
-          <img src="/img/background.png" class="d-block w-100" alt="...">
-          <div class="absolute-div">
-            <div class="carousel-caption">
-                <h3>Madrasah Ibtidaiyah Al-Ikhlas <br> Pasir Mukti</h3>
-            </div>
-        </div>
+          <img src="/img/fotbar_bajubatik.png" class="d-block w-100" alt="...">
+          <div class="centered text-center">Selamat Datang Di Website<br> Madrasah Ibtidaiyah Al-Ikhlas Pasir Mukti
+          <br><a href="" class="btn btn-primary">Selengkapnya</a>
+          </div>
         </div>
         </div>
 
         <div class="carousel-item">
           <img src="/img/background2.png" class="d-block w-100" alt="...">
-          <div class="absolute-div">
-            <div class="carousel-caption">
-                <h3>Madrasah Ibtidaiyah Al-Ikhlas <br> Pasir Mukti</h3>
-            </div>
-        </div>
         </div>
 
         <div class="carousel-item">
           <img src="/img/back.jpg" class="d-block w-100" alt="...">
-          <div class="absolute-div">
-            <div class="carousel-caption">
-                <h3>Madrasah Ibtidaiyah Al-Ikhlas <br> Pasir Mukti</h3>
-            </div>
-        </div>
         </div>
 
       </div>

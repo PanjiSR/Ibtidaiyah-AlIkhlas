@@ -13,7 +13,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             <li class="nav-item">
-            <a href="/admin/dashboard" class="nav-link">
+            <a href="/admin/dashboard" class="nav-link {{ Request::is('admin/dashboard*') ? 'active' : '' }} ">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
@@ -46,16 +46,25 @@
           </li> 
 
           <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="/admin/banner/" class="nav-link {{ Request::is('admin/banner*') ? 'active' : '' }}">
               <i class="nav-icon fas fa-image"></i>
               <p>
                 Banner
               </p>
             </a>
           </li>     
+          
+          <li class="nav-item">
+            <a href="/admin/latest/" class="nav-link {{ Request::is('admin/latest*') ? 'active' : '' }}">
+              <i class="nav-icon fas fa-file"></i>
+              <p>
+                B & K Terbaru
+              </p>
+            </a>
+          </li>     
 
           <li class="nav-item">
-            <a href="/admin/user" class="nav-link">
+            <a href="/admin/user" class="nav-link {{ Request::is('admin/user*') ? 'active' : '' }}">
               <i class="nav-icon fas fa-user"></i>
               <p>
                 User
