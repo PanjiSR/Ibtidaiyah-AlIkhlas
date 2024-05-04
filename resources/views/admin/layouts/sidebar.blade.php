@@ -2,7 +2,7 @@
     <!-- Brand Logo -->
     <a href="../../index3.html" class="brand-link">
       <img src="../../dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light"> Madrsah Ibtidaiyah Al-Ikhlas</span>
     </a>
 
     <!-- Sidebar -->
@@ -21,8 +21,8 @@
             </a>
           </li>     
 
-          <li class="nav-item">
-            <a href="#" class="nav-link">
+          <li class="nav-item {{ Request::is('admin/posts*') ? 'menu-is-opening menu-open' : '' }}">
+            <a href="#" class="nav-link ">
               <i class="nav-icon fas fa-file"></i>
               <p>
                 Blog
@@ -31,13 +31,13 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../../index.html" class="nav-link">
+                <a href="/admin/posts/blog" class="nav-link {{ Request::is('admin/posts/blog') ? 'active' : "" }}">
                   <i class="far fa-circle nav-icon"></i>
-                  <p>Post</p>
+                  <p>Blog</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../index2.html" class="nav-link">
+                <a href="/admin/posts/category" class="nav-link {{ Request::is('admin/posts/category') ? 'active' : "" }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Kategori</p>
                 </a>

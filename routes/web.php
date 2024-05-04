@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\AdminBannerController;
+use App\Http\Controllers\AdminBlogController;
+use App\Http\Controllers\AdminCategoryController;
 use App\Http\Controllers\AdminLatestController;
 use App\Http\Controllers\AdminUserController;
 use Illuminate\Support\Facades\Route;
@@ -53,6 +55,9 @@ Route::prefix('/admin')->group(function() {
         ];
         return view('admin.layouts.wrapper', $data);
     });
+    
+    Route::resource('/posts/blog',AdminBlogController::class);
+    Route::resource('/posts/category',AdminCategoryController::class);
 
     Route::resource('/user', AdminUserController::class);
     Route::resource('/banner', AdminBannerController::class);

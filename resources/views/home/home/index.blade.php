@@ -71,7 +71,7 @@
                   <div class="row">
                       <div class="col-lg-12 col-md-12 mt-4 pt-2">
                           <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
-                              <img src="https://www.bootdey.com/image/241x362/FFB6C1/000000" class="img-fluid" alt="Image" />
+                              <img src="/img/Gambar2.jpg" class="img-fluid" alt="Image" />
                               <div class="img-overlay bg-dark"></div>
                           </div>
                       </div>
@@ -91,7 +91,7 @@
                   <div class="row">
                       <div class="col-lg-12 col-md-12">
                           <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
-                              <img src="https://www.bootdey.com/image/337x450/87CEFA/000000" class="img-fluid" alt="Image" />
+                              <img src="/img/Gambar1.jpg" class="img-fluid" alt="Image" />
                               <div class="img-overlay bg-dark"></div>
                           </div>
                       </div>
@@ -99,7 +99,7 @@
 
                       <div class="col-lg-12 col-md-12 mt-4 pt-2">
                           <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
-                              <img src="https://www.bootdey.com/image/600x401/FF7F50/000000" class="img-fluid" alt="Image" />
+                              <img src="/img/Gambar3.jpg" class="img-fluid" alt="Image" />
                               <div class="img-overlay bg-dark"></div>
                           </div>
                       </div>
