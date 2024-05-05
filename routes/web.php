@@ -1,19 +1,17 @@
 <?php
 
+use App\Http\Controllers\AdminAuthController;
 use App\Http\Controllers\AdminBannerController;
 use App\Http\Controllers\AdminBlogController;
 use App\Http\Controllers\AdminCategoryController;
+use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\AdminLatestController;
+use App\Http\Controllers\AdminLoginController;
 use App\Http\Controllers\AdminUserController;
+use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    // return view('home.index');
-    $data = [
-        'content' => 'home/home/index'
-    ];
-    return view('home.layouts.wrapper', $data);
-});
+Route::get('/', [HomeController::class, 'index']);
 
 Route::get('/profile', function () {
     $data = [
@@ -39,22 +37,16 @@ Route::get('/detail', function () {
     ];
     return view('home.layouts.wrapper', $data);
 });
-Route::get('/login', function () {
-    $data = [
-        'content' => 'home/auth/login'
-    ];
-    return view('home.layouts.wrapper', $data);
-});
+Route::get('/login', [AdminAuthController::class, 'index'])->name('login')->middleware('guest');
+Route::post('/login/do', [AdminAuthController::class, 'doLogin']);
 
 
 // ==== Admin ==== //
-Route::prefix('/admin')->group(function() {
-    Route::get('/dashboard', function(){
-        $data = [
-            'content' => 'admin/dashboard/index'
-        ];
-        return view('admin.layouts.wrapper', $data);
-    });
+Route::prefix('/admin')->middleware('auth')->group(function() {
+
+    Route::get('logout', [AdminAuthController::class, 'logout']);
+
+    Route::get('/dashboard', [AdminDashboardController::class, 'index']);
     
     Route::resource('/posts/blog',AdminBlogController::class);
     Route::resource('/posts/category',AdminCategoryController::class);

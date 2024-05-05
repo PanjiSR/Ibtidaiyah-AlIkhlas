@@ -7,15 +7,17 @@
                     <tr>
                         <td>No</td>
                         <td>Gambar</td>
-                        <td>Judul</td>
-                        <td>Deskripsi</td>
+                        <td>Title</td>
+                        <td>Action</td>
                     </tr>
                     @foreach ($latest as $item)
                     <tr>
                         <td>{{ $loop->iteration }}</td>
-                        <td><img src="/{{ $item->gambar }}" width="200px" alt="" srcset=""></td>
-                        <td>{{ $item->title }}</td>
-                        <td>{{ $item->desc }}</td>
+                        <td><img src="/{{ $item->foto }}" width="200px" alt=""></td>
+                        <td>
+                            {{-- {{ $item->title }} --}}
+                            <a href="/admin/latest/{{ $item->id }}"><b>{{ $item->title }}</b></a>
+                        </td>
                         <td>
                             <div class="d-flex">
                             <a href="/admin/latest/{{ $item->id }}/edit" class="btn btn-success mx-2">Edit</a>

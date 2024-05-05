@@ -7,7 +7,8 @@ use Illuminate\Http\Request;
 
 class AdminLatestController extends Controller
 {
-    /**
+    //
+        /**
      * Display a listing of the resource.
      */
     public function index()
@@ -39,26 +40,24 @@ class AdminLatestController extends Controller
      */
     public function store(Request $request)
     {
-        //
-        // dd($request->all());
         $data = $request->validate([
             'title' => 'required',
-            'desc' => 'required',
-            'gambar' => 'required',
-
+            'body' => 'required',
+            'foto' => 'required',
         ]);
 
-        // Upload Gambar
-        if($request->hasFile('gambar')){
-            $gambar = $request->file('gambar');
-            $file_name = time().'-'. $gambar->getClientOriginalName();
-            $storage = 'uploads/latests/';
-            $gambar->move($storage, $file_name);
-            $data['gambar'] = $storage . $file_name;
-        }else{
-            $data['gambar'] = null;
-        }
+        // $data ['urutan'] = 0;
+        // Upload foto
+        if($request->hasFile('foto')){
+            $foto = $request->file('foto');
+            $file_name = time().'-'. $foto->getClientOriginalName();
 
+            $storage = 'uploads/latests/';
+            $foto->move($storage, $file_name);
+            $data['foto'] = $storage . $file_name;
+        }else{
+            $data['foto'] = null;
+        }
 
         Latest::create($data);
         return redirect('/admin/latest');
@@ -70,6 +69,13 @@ class AdminLatestController extends Controller
     public function show(string $id)
     {
         //
+        $data = [
+            'title' => 'Edit latest',
+            'latest' => Latest::find($id),
+            'content' => 'admin/latest/show'
+        ];
+        return view('admin.layouts.wrapper', $data);
+    
     }
 
     /**
@@ -79,9 +85,9 @@ class AdminLatestController extends Controller
     {
         //
         $data = [
-            'title' => 'required',
-            'desc' => 'required',
-            'gambar' => 'required',
+            'title' => 'Edit latest',
+            'latest' => Latest::find($id),
+            'content' => 'admin/latest/add'
         ];
         return view('admin.layouts.wrapper', $data);
     }
@@ -95,27 +101,27 @@ class AdminLatestController extends Controller
         $latest = Latest::find($id);
         $data = $request->validate([
             'title' => 'required',
-            'gammbar' => 'required'
+            'body' => 'required',
+            // 'foto' => 'required',
         ]);
 
-         // Upload Gambar
-         if($request->hasFile('gambar')){
+        // Upload foto
+        if($request->hasFile('foto')){
 
-            if($latest->gambar != null){
-                unlink($latest->gambar);
+            if($latest->foto != null){
+                unlink($latest->foto);
             }
 
-            $gambar = $request->file('gambar');
-            $file_name = time().'-'. $gambar->getClientOriginalName();
+            $foto = $request->file('foto');
+            $file_name = time().'-'. $foto->getClientOriginalName();
 
             $storage = 'uploads/latests/';
-            $gambar->move($storage, $file_name);
-            $data['gambar'] = $storage . $file_name;
+            $foto->move($storage, $file_name);
+            $data['foto'] = $storage . $file_name;
         }else{
-            $data['gambar'] = $latest->gambar;
+            $data['foto'] = $latest->foto;
         }
 
-        
         $latest->update($data);
         return redirect('/admin/latest');
         
@@ -128,6 +134,11 @@ class AdminLatestController extends Controller
     {
         //
         $latest = Latest::find($id);
+
+        if($latest->foto != null){
+            unlink($latest->foto);
+        }
+        
         $latest->delete();
         return redirect('/admin/latest');
 

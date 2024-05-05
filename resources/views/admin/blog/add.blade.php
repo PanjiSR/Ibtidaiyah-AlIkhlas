@@ -38,7 +38,7 @@
 
                     <div class="form-group">
                         <label for="">Body</label>
-                        <textarea type="text" name="body" class="form-control @error('body') is-invalid @enderror" placeholder="Body">{{ isset($blog) ? $blog->body : old('body') }}</textarea>
+                        <textarea type="text" id="summernote" name="body" class="form-control @error('body') is-invalid @enderror" placeholder="Body">{{ isset($blog) ? $blog->body : old('body') }}</textarea>
                         @error('body')
                         <div class="invalid-feedback">
                             {{ $message }}

@@ -7,7 +7,7 @@
                 <p>date created {{ $blog->created_at }} </p>
                 <img src="/{{ $blog->cover }}" width="100%" alt="">
                 <div class="py-2"></div>
-                <p>{{ $blog->body }} </p>
+                <p>{!! $blog->body !!} </p>
             </div>
         </div>
     </div>

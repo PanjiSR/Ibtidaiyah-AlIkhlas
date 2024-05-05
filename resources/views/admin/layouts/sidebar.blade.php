@@ -37,7 +37,7 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="/admin/posts/category" class="nav-link {{ Request::is('admin/posts/category') ? 'active' : "" }}">
+                <a href="/admin/posts/category" class="nav-link {{ Request::is('admin/posts/category') ? 'active' : "" }} disabled">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Kategori</p>
                 </a>

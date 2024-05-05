@@ -1,5 +1,5 @@
 <!-- Login 4 - Bootstrap Brain Component -->
-<section class="p-3 p-md-4 p-xl-5">
+<section class="p-3 p-md-4 p-xl-5 my-4">
     <div class="container">
       <div class="card border-light-subtle shadow-sm">
         <div class="row g-0">
@@ -15,7 +15,12 @@
                   </div>
                 </div>
               </div>
-              <form action="#!">
+
+              @if(session()->has('loginError'))
+              <div class="alert alert-danger">{{ session('loginError') }}</div>
+              @endif
+              <form action="/login/do" method="POST">
+                @csrf
                 <div class="row gy-3 gy-md-4 overflow-hidden">
                   <div class="col-12">
                     <label for="email" class="form-label">Email <span class="text-danger">*</span></label>

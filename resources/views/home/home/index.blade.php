@@ -190,50 +190,24 @@
   </div><!--end row-->
 
   <div class="row">
+
+    @foreach ($latest as $item)
+
       <div class="col-lg-4 col-md-6 mt-4 pt-2 ">
           <div class="blog-post rounded border">
               <div class="blog-img d-block overflow-hidden position-relative">
-                  <img src="https://www.bootdey.com/image/350x280/FF7F50/000000" class="img-fluid rounded-top" alt="">
+                  <img src="/{{ $item->foto }}" class="img-fluid rounded-top" alt="">
                   <div class="overlay rounded-top bg-dark"></div>
               </div>
               <div class="content p-3">
-                  <small class="text-muted p float-right">19th Oct, 19</small>
-                  <small><a href="javascript:void(0)" class="text-primary">Marketing</a></small>
-                  <h4 class="mt-2"><a href="javascript:void(0)" class="text-dark title">Quick guide on business with friends.</a></h4>
-                  <p class="text-muted mt-2">There is now an abundance of readable dummy texts. These are usually used when a text is required purely to fill a space.</p>
+                  <small> {{ $item->created_at }} </small>
+                  <h4 class="mt-2"><a href="javascript:void(0)" class="text-dark title"> {{ $item->title }} </a></h4>
+                  <p class="text-muted mt-2"> {!! Illuminate\Support\Str::limit($item->body, 100) !!} </p>
               </div>
           </div><!--end blog post-->
       </div><!--end col-->
-      
-      <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="blog-post rounded border">
-              <div class="blog-img d-block overflow-hidden position-relative">
-                  <img src="https://www.bootdey.com/image/350x280/6495ED/000000" class="img-fluid rounded-top" alt="">
-                  <div class="overlay rounded-top bg-dark"></div>
-              </div>
-              <div class="content p-3">
-                  <small class="text-muted p float-right">19th Oct, 19</small>
-                  <small><a href="javascript:void(0)" class="text-primary">Event</a></small>
-                  <h4 class="mt-2"><a href="javascript:void(0)" class="text-dark title">Become more money-minded</a></h4>
-                  <p class="text-muted mt-2">There is now an abundance of readable dummy texts. These are usually used when a text is required purely to fill a space.</p>
-              </div>
-          </div><!--end blog post-->
-      </div><!--end col-->
-      
-      <div class="col-lg-4 col-md-6 mt-4 pt-2">
-          <div class="blog-post rounded border">
-              <div class="blog-img d-block overflow-hidden position-relative">
-                  <img src="https://www.bootdey.com/image/350x280/FF1493/000000" class="img-fluid rounded-top" alt="">
-                  <div class="overlay rounded-top bg-dark"></div>
-              </div>
-              <div class="content p-3">
-                  <small class="text-muted p float-right">19th Oct, 19</small>
-                  <small><a href="javascript:void(0)" class="text-primary">Software</a></small>
-                  <h4 class="mt-2"><a href="javascript:void(0)" class="text-dark title">Quick guide on business with friends.</a></h4>
-                  <p class="text-muted mt-2">There is now an abundance of readable dummy texts. These are usually used when a text is required purely to fill a space.</p>
-              </div>
-          </div><!--end blog post-->
-      </div><!--end col-->
+
+    @endforeach
   </div><!--end row-->
 </div>
 </div>

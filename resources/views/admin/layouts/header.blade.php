@@ -13,13 +13,9 @@
           <i class="fas fa-expand-arrows-alt"></i>
         </a>
       </li>
+      
       <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-          <i class="fas fa-th-large"></i>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+        <a class="nav-link" href="/admin/logout/">
           <i class="fas fa-sign-out-alt"></i>
         </a>
       </li>

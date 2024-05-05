@@ -14,8 +14,8 @@ return new class extends Migration
         Schema::create('latests', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('desc');
-            $table->text('gambar');
+            $table->text('foto');
+            $table->text('body');
             $table->timestamps();
         });
     }
