@@ -19,7 +19,9 @@
     <!-- Bootstrap core CSS -->
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/sticky-footer-navbar/">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
+    {{-- AOScroll --}}
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;
@@ -37,4 +39,4 @@
     </style>
 
   </head>
-  <body class="d-flex flex-column h-100" style="background-color: #F3F3F3 ">
+  <body class="d-flex flex-column h-100" style="background-color: #FBF6EE ">

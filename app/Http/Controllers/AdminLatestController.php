@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use App\Models\Latest;
 use Illuminate\Http\Request;
 
@@ -17,6 +18,7 @@ class AdminLatestController extends Controller
         $data = [
             'title' => 'Manajemen Berita & Kegiatan Terbaru',
             'latest' => Latest::get(),
+            'blog' => Blog::get(),
             'content' => 'admin/latest/index'
         ];
         return view('admin.layouts.wrapper', $data);

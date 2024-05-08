@@ -8,10 +8,14 @@ use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\AdminLatestController;
 use App\Http\Controllers\AdminLoginController;
 use App\Http\Controllers\AdminUserController;
+use App\Http\Controllers\HomeBlogController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index']);
+Route::get('/blog', [HomeBlogController::class, 'index']);
+Route::get('/blog/show/{id}', [HomeBlogController::class, 'show']);
+
 
 Route::get('/profile', function () {
     $data = [
@@ -19,12 +23,7 @@ Route::get('/profile', function () {
     ];
     return view('home.layouts.wrapper', $data);
 });
-Route::get('/news', function () {
-    $data = [
-        'content' => 'home/news/index'
-    ];
-    return view('home.layouts.wrapper', $data);
-});
+
 Route::get('/contact', function () {
     $data = [
         'content' => 'home/contact/index'

@@ -132,7 +132,7 @@
 {{-- Content of Contact --}}
 
 <section class="section gray-bg my-5" id="contactus">
-    <div class="container mt-4">
+    <div class="container mt-5">
         <div class="row">
             <div class="col-lg-6">
                 <div class="section-title">

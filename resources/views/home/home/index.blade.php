@@ -1,44 +1,6 @@
-{{-- <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="/img/background.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>First slide label</h5>
-        <p>Some representative placeholder content for the first slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="/img/background2.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block">
-        <h5>Second slide label</h5>
-        <p>Some representative placeholder content for the second slide.</p>
-      </div>
-    </div>
-    <div class="carousel-item">
-      <img src="/img/back.jpg" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-block d-sm-block">
-        <h5>Third slide label</h5>
-        <p>Some representative placeholder content for the third slide.</p>
-      </div>
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div> --}}
 
 {{-- Hero 1 --}}
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    {{-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         
         <div class="carousel-item active">
@@ -48,18 +10,33 @@
           </div>
         </div>
         </div>
-
-        <div class="carousel-item">
-          <img src="/img/background2.png" class="d-block w-100" alt="...">
-        </div>
-
-        <div class="carousel-item">
-          <img src="/img/back.jpg" class="d-block w-100" alt="...">
-        </div>
-
       </div>
-    </div>
+    </div> --}}
 {{-- Hero 1 End --}}
+
+{{-- Hero 1 Update --}}
+<div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="/img/fotbar_bajubatik.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/img/background2.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="/img/back.jpg" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{{-- End Hero 1 Update --}}
 
 {{-- Hero 2 --}}
 <div class="container-fluid" >
@@ -69,7 +46,7 @@
           <div class="row align-items-center">
               <div class="col-lg-6 col-md-6 col-6">
                   <div class="row">
-                      <div class="col-lg-12 col-md-12 mt-4 pt-2">
+                      <div class="col-lg-12 col-md-12 mt-4 pt-2" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="200">
                           <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
                               <img src="/img/Gambar2.jpg" class="img-fluid" alt="Image" />
                               <div class="img-overlay bg-dark"></div>
@@ -89,7 +66,7 @@
 
               <div class="col-lg-6 col-md-6 col-6">
                   <div class="row">
-                      <div class="col-lg-12 col-md-12">
+                      <div class="col-lg-12 col-md-12" data-aos="zoom-in-down" data-aos-duration="1000">
                           <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
                               <img src="/img/Gambar1.jpg" class="img-fluid" alt="Image" />
                               <div class="img-overlay bg-dark"></div>
@@ -97,7 +74,7 @@
                       </div>
                       <!--end col-->
 
-                      <div class="col-lg-12 col-md-12 mt-4 pt-2">
+                      <div class="col-lg-12 col-md-12 mt-4 pt-2" data-aos="zoom-in-left" data-aos-duration="1000">
                           <div class="card work-desk rounded border-0 shadow-lg overflow-hidden">
                               <img src="/img/Gambar3.jpg" class="img-fluid" alt="Image" />
                               <div class="img-overlay bg-dark"></div>
@@ -113,7 +90,7 @@
       </div>
       <!--end col-->
 
-      <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2">
+      <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2" data-aos="fade-left" data-aos-duration="1000">
           <div class="section-title ml-lg-5">
               <h5 class="title text-custom font-weight-normal mb-3">Madrasah Ibtidaiyah Al-Ikhlas Pasir Mukti</h5>
               <h5 class="mb-4">
@@ -159,10 +136,10 @@
 <div class="container-fluid">
   <div class="container my-5">
     <div class="row  ">
-      <div class="col-5">
+      <div class="col-5" data-aos="fade-up" data-aos-duration="500">
         <img src="/img/Hero2.png" alt="" class="img-fluid">
       </div>
-      <div class="col-6">
+      <div class="col-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
         <h1 class="title aripin"><strong>Sambutan Kepala Sekolah</strong></h1>
         <h4><strong>Aripin Sanusi Sanjaya, S.P.d</strong></h4>
         <p><strong>Kepala Sekolah MI Al-Ikhlas |</strong></p>
@@ -193,7 +170,8 @@
 
     @foreach ($latest as $item)
 
-      <div class="col-lg-4 col-md-6 mt-4 pt-2 ">
+      <div class="col-lg-4 col-md-6 mt-4 pt-2 " data-aos="fade-up"
+      data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
           <div class="blog-post rounded border">
               <div class="blog-img d-block overflow-hidden position-relative">
                   <img src="/{{ $item->foto }}" class="img-fluid rounded-top" alt="">
@@ -201,7 +179,7 @@
               </div>
               <div class="content p-3">
                   <small> {{ $item->created_at }} </small>
-                  <h4 class="mt-2"><a href="javascript:void(0)" class="text-dark title"> {{ $item->title }} </a></h4>
+                  <h4 class="mt-2"><a href="/blog" class="text-dark title"> {{ $item->title }} </a></h4>
                   <p class="text-muted mt-2"> {!! Illuminate\Support\Str::limit($item->body, 100) !!} </p>
               </div>
           </div><!--end blog post-->
@@ -222,7 +200,7 @@
       <p>Struktur Organisasi dan Tata Kerja Yayasan Al-Ikhlas</p>
       <!-- Single Advisor-->
       <div class="col-12 col-sm-6 col-lg-3">
-        <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+        <div class="single_advisor_profile" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1400">
           <!-- Team Thumb-->
           <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
             <!-- Social Info-->
@@ -236,8 +214,8 @@
         </div>
       </div>
       <!-- Single Advisor-->
-      <div class="col-12 col-sm-6 col-lg-3">
-        <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+      <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
+        <div class="single_advisor_profile">
           <!-- Team Thumb-->
           <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
             <!-- Social Info-->
@@ -251,8 +229,8 @@
         </div>
       </div>
       <!-- Single Advisor-->
-      <div class="col-12 col-sm-6 col-lg-3">
-        <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+      <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+        <div class="single_advisor_profile">
           <!-- Team Thumb-->
           <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="">
             <!-- Social Info-->
@@ -266,8 +244,8 @@
         </div>
       </div>
       <!-- Single Advisor-->
-      <div class="col-12 col-sm-6 col-lg-3">
-        <div class="single_advisor_profile wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+      <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-left" data-aos-duration="1000">
+        <div class="single_advisor_profile">
           <!-- Team Thumb-->
           <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="">
             <!-- Social Info-->
