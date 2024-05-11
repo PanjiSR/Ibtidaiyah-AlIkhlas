@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Blog;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class AdminBlogController extends Controller
 {
@@ -59,6 +60,7 @@ class AdminBlogController extends Controller
         }
 
         Blog::create($data);
+        Alert::success('Berhasil', 'Data Berhasil Ditambah');
         return redirect('/admin/posts/blog');
     }
 
@@ -122,6 +124,7 @@ class AdminBlogController extends Controller
         }
 
         $blog->update($data);
+        Alert::success('Berhasil', 'Data Berhasil Diubah');
         return redirect('/admin/posts/blog');
         
     }
@@ -139,6 +142,7 @@ class AdminBlogController extends Controller
         }
         
         $blog->delete();
+        Alert::success('Berhasil', 'Data Berhasil Dihapus');
         return redirect('/admin/posts/blog');
 
     }

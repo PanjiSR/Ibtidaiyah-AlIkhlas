@@ -17,7 +17,9 @@ class HomeController extends Controller
             'latest' => Latest::limit(3)->get(),
             'content' => 'home/home/index'
         ];
-        return view('home.layouts.wrapper', $data);
+        return view('home.layouts.wrapper', $data, [
+            "title" => "Home"
+        ]);
     }
 }
 

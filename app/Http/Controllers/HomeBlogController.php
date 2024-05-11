@@ -15,7 +15,9 @@ class HomeBlogController extends Controller
             'latest' => Latest::first(),
             'content' => 'home/blog/index'
         ];
-        return view('home.layouts.wrapper', $data);
+        return view('home.layouts.wrapper', $data, [
+            "title" => "Blog"
+        ]);
     }
 
     public function show($id){
@@ -24,6 +26,8 @@ class HomeBlogController extends Controller
             'latest' => Latest::get(),
             'content' => 'home/blog/show'
         ];
-        return view('home.layouts.wrapper', $data);
+        return view('home.layouts.wrapper', $data, [
+            "title" => "Show Blog"
+        ]);
     }
 }

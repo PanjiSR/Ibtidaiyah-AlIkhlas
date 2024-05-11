@@ -54,12 +54,12 @@
             <h2 class="fw-bold">PETA LOKASI</h2>
             <p>Peta Lokasi Yayasan Al-Ikhlas Pasir Mukti</p>
         </div>
-        <div class="row" data-aos="fade-up" data-aos-duration="1000">
+        <div class="row" data-aos="fade-up" data-aos-duration="500">
             <div class="col-5">
-                <img src="/img/detail-murid.png" alt="">
+                <img src="/img/detail-murid.png" alt="" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">
             </div>
             <div class="col-5">
-
+                <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3964.0924902941624!2d106.8953899!3d-6.5099762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMzAnMzYuOSJTIDEwNsKwNTMnNDMuOCJF!5e0!3m2!1sid!2sid!4v1715408092100!5m2!1sid!2sid" width="650" height="300" style="border:0; border-radius:20px; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </div>

@@ -144,35 +144,32 @@
         <div class="row flex-row-reverse">
             <div class="col-md-7 col-lg-8 m-15px-tb">
                 <div class="contact-form">
-                     <form action="/" method="post" class="contactform contact_form" id="contact_form">
-                        <div class="returnmessage valid-feedback p-15px-b" data-success="Your message has been received, We will contact you soon."></div>
-                        <div class="empty_notice invalid-feedback p-15px-b"><span>Please Fill Required Fields</span></div>
+                     <form action="/contact/send" method="post" class="contactform contact_form" id="contact_form">
                         <div class="row">
+                        {{-- <form action="/contact/send" method="POST"> --}}
+                            @csrf
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input id="name" type="text" placeholder="Full Name" class="form-control"> 
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input id="email" type="text" placeholder="Email Address" class="form-control">  
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="form-group">
-                                    <input id="subject" type="text" placeholder="Subject" class="form-control"> 
+                                    <input name="name" type="text" placeholder="Nama Lengkap" class="form-control @error('name') is-invalid @enderror"> 
+                                    @error('name')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
                                 </div>
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <textarea id="message" placeholder="Message" class="form-control" rows="3"></textarea> 
+                                    <textarea name="desc" placeholder="Pesan" class="form-control @error('desc') is-invalid @enderror" rows="3"></textarea> 
+                                    @error('desc')
+                                    <div class="invalid-feedback">
+                                        {{ $message }}
+                                    </div>
+                                    @enderror
                                 </div>
                             </div>
-                            <div class="col-md-12">
-                                <div class="send">
-                                    <a id="send_message" class="px-btn theme" href="#"><span>Contact Us</span> <i class="arrow"></i></a>
-                                </div>
-                            </div>
+                            <button type="submit" class="btn btn-success mt-3">Kirim Pesan</button>
+                        {{-- </form> --}}
                         </div>
                     </form>
                 </div>

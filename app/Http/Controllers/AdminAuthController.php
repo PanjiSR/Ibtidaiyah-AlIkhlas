@@ -12,7 +12,9 @@ class AdminAuthController extends Controller
         $data = [
             'content' => 'home/auth/login'
         ];
-        return view('home.layouts.wrapper', $data);
+        return view('home.layouts.wrapper', $data, [
+            "title" => "Login"
+        ]);
     }
 
     function doLogin(Request $request){

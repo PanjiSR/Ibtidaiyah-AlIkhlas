@@ -7,8 +7,10 @@ use App\Http\Controllers\AdminCategoryController;
 use App\Http\Controllers\AdminDashboardController;
 use App\Http\Controllers\AdminLatestController;
 use App\Http\Controllers\AdminLoginController;
+use App\Http\Controllers\AdminPesanController;
 use App\Http\Controllers\AdminUserController;
 use App\Http\Controllers\HomeBlogController;
+use App\Http\Controllers\HomeContactController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Route;
 
@@ -21,21 +23,21 @@ Route::get('/profile', function () {
     $data = [
         'content' => 'home/profile/index'
     ];
-    return view('home.layouts.wrapper', $data);
+    return view('home.layouts.wrapper', $data, [
+        "title" => "Profile"
+    ]);
 });
 
-Route::get('/contact', function () {
-    $data = [
-        'content' => 'home/contact/index'
-    ];
-    return view('home.layouts.wrapper', $data);
-});
+Route::get('/contact', [HomeContactController::class, 'index']);
+Route::post('/contact/send', [HomeContactController::class, 'send']);
+
 Route::get('/detail', function () {
     $data = [
         'content' => 'home/detail/index'
     ];
     return view('home.layouts.wrapper', $data);
 });
+
 Route::get('/login', [AdminAuthController::class, 'index'])->name('login')->middleware('guest');
 Route::post('/login/do', [AdminAuthController::class, 'doLogin']);
 
@@ -53,5 +55,6 @@ Route::prefix('/admin')->middleware('auth')->group(function() {
     Route::resource('/user', AdminUserController::class);
     Route::resource('/banner', AdminBannerController::class);
     Route::resource('/latest', AdminLatestController::class);
+    Route::resource('/pesan', AdminPesanController::class);
 
 });

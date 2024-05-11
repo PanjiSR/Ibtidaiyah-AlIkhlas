@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Banner;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class AdminBannerController extends Controller
 {
@@ -61,6 +62,8 @@ class AdminBannerController extends Controller
         }
 
         Banner::create($data);
+        Alert::success('Berhasil', 'Data Berhasil Ditambah');
+
         return redirect('/admin/banner');
     }
 
@@ -119,6 +122,7 @@ class AdminBannerController extends Controller
         }
 
         $banner->update($data);
+        Alert::success('Berhasil', 'Data Berhasil Diubah');
         return redirect('/admin/banner');
         
     }
@@ -136,6 +140,7 @@ class AdminBannerController extends Controller
         }
         
         $banner->delete();
+        Alert::success('Berhasil', 'Data Berhasil Dihapus');
         return redirect('/admin/banner');
 
     }

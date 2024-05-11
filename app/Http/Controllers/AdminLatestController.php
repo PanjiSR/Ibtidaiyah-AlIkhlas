@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\Latest;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class AdminLatestController extends Controller
 {
@@ -62,6 +63,7 @@ class AdminLatestController extends Controller
         }
 
         Latest::create($data);
+        Alert::success('Berhasil', 'Data Berhasil Ditambah');
         return redirect('/admin/latest');
     }
 
@@ -125,6 +127,7 @@ class AdminLatestController extends Controller
         }
 
         $latest->update($data);
+        Alert::success('Berhasil', 'Data Berhasil Diubah');
         return redirect('/admin/latest');
         
     }
@@ -142,6 +145,7 @@ class AdminLatestController extends Controller
         }
         
         $latest->delete();
+        Alert::success('Berhasil', 'Data Berhasil Dihapus');
         return redirect('/admin/latest');
 
     }

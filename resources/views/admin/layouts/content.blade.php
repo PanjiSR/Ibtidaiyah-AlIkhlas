@@ -1,3 +1,4 @@
+@include('sweetalert::alert')
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">

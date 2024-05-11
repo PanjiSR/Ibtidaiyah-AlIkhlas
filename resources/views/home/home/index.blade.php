@@ -96,33 +96,7 @@
               <h5 class="mb-4">
                 “Mendidik Dengan Rasa Penuh Kasih Sayang" <br />
               </h5>
-              <p class="text-muted mb-0">Madrasah Ibtidaiyah Al-Ikhlas Pasirmukti adalah lembaga formal setingkat Sekolah Dasar (SD) yang bernaung di bawah Kementerian Agama. Kami berupaya dalam mendidik siswa dan siswi kami dengan rasa penuh kasih sayang.</p>
-              <div class="row">
-                  <div class="col-lg-6 mt-4 pt-2">
-                      <div class="media align-items-center rounded shadow p-3">
-                          <i class="fa fa-play h4 mb-0 text-custom"></i>
-                          <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark ">Responsive</a></h6>
-                      </div>
-                  </div>
-                  <div class="col-lg-6 mt-4 pt-2">
-                      <div class="media align-items-center rounded shadow p-3">
-                          <i class="fa fa-file-download h4 mb-0 text-custom"></i>
-                          <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark ">Free Download</a></h6>
-                      </div>
-                  </div>
-                  <div class="col-lg-6 mt-4 pt-2">
-                      <div class="media align-items-center rounded shadow p-3">
-                          <i class="fa fa-user h4 mb-0 text-custom"></i>
-                          <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark ">Support</a></h6>
-                      </div>
-                  </div>
-                  <div class="col-lg-6 mt-4 pt-2">
-                      <div class="media align-items-center rounded shadow p-3">
-                          <i class="fa fa-image h4 mb-0 text-custom"></i>
-                          <h6 class="ml-3 mb-0"><a href="javascript:void(0)" class="text-dark ">Development</a></h6>
-                      </div>
-                  </div>
-              </div>
+              <p class="text-muted mb-0">Madrasah Ibtidaiyah Al-Ikhlas Pasirmukti adalah lembaga formal setingkat Sekolah Dasar (SD) yang bernaung di bawah Kementerian Agama. Kami berupaya dalam mendidik siswa dan siswi kami dengan rasa penuh kasih sayang. Kepedulian kami terhadap capaian akademik berbanding lurus dengan kepedulian terhadap pembagunan insan berkarakter dengan penguatan jati diri sebagai anak bangsa yang mencintai Agama dan Negara Kesatuan Republik Indonesia dan Kami mayakini sesungguhnya komitmen dan konsisten merupakan pondasi dalam mewujudkan keberhasilan. kami meyakini bahwa upaya dalam mendidik generasi penerus dan berkontribusi dalam memerangi kebodohan merupakan pengabdian dalam mewujudkan cita-cita negara sehingga bisa menjadi negara yang maju. Dengan Inilah cara kami mendidik dan menggapai ridha Allah swt dan Semoga Allah swt memberikan pahala dan balasan kebaikan tak terhingga kepada para guru-guru kita yang mana mereka telah berjuang tanpa pamrih untuk kebaikan dan bekal kita.</p>
           </div>
       </div>
       <!--end col-->
