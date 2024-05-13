@@ -11,7 +11,7 @@ class HomeBlogController extends Controller
     //
     function index (){
         $data = [
-            'blog' => Blog::get(),
+            'blog' => Blog::orderBy('created_at', 'desc')->get(),
             'latest' => Latest::first(),
             'content' => 'home/blog/index'
         ];
@@ -23,7 +23,7 @@ class HomeBlogController extends Controller
     public function show($id){
         $data = [
             'blog' => Blog::find($id),
-            'latest' => Latest::get(),
+            'latest' => Latest::limit(5)->orderBy('created_at', 'desc')->get(),
             'content' => 'home/blog/show'
         ];
         return view('home.layouts.wrapper', $data, [

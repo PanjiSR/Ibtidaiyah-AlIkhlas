@@ -30,9 +30,13 @@
             </a>
           </li>     
 
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-2 mb-2 text-muted">
+            <span>CRUD</span>
+          </h6>
+
           <li class="nav-item {{ Request::is('admin/posts*') ? 'menu-is-opening menu-open' : '' }}">
             <a href="#" class="nav-link ">
-              <i class="nav-icon fas fa-file"></i>
+              <i class="nav-icon fas fa-file-import"></i>
               <p>
                 Blog
                 <i class="right fas fa-angle-left"></i>
@@ -65,13 +69,17 @@
           
           <li class="nav-item">
             <a href="/admin/latest/" class="nav-link {{ Request::is('admin/latest*') ? 'active' : '' }}">
-              <i class="nav-icon fas fa-file"></i>
+              <i class="nav-icon fas fa-file-import"></i>
               <p>
                 B & K Terbaru
               </p>
             </a>
           </li>     
-
+          
+          @can('admin')
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-2 text-muted">
+            <span>Administrator</span>
+          </h6>
           <li class="nav-item">
             <a href="/admin/user" class="nav-link {{ Request::is('admin/user*') ? 'active' : '' }}">
               <i class="nav-icon fas fa-user"></i>
@@ -80,6 +88,20 @@
               </p>
             </a>
           </li> 
+          @endcan
+
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-2 mb-2 text-muted">
+            <span>User</span>
+          </h6>
+
+          <li class="nav-item">
+            <a href="/admin/logout/" class="nav-link">
+              <i class="nav-icon fas fa-sign-out-alt"></i>
+              <p>
+                Logout
+              </p>
+            </a>
+          </li>
 
         </ul>
       </nav>
@@ -87,3 +109,4 @@
     </div>
     <!-- /.sidebar -->
   </aside>
+ 

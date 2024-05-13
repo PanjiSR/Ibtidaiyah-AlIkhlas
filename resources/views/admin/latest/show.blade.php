@@ -7,7 +7,7 @@
                 <p>date created {{ $latest->created_at }} </p>
                 <img src="/{{ $latest->foto }}" width="100%" alt="">
                 <div class="py-2"></div>
-                <p>{!! $latest->body !!} </p>
+                <p>{!! $latest->desc !!} </p>
             </div>
         </div>
     </div>

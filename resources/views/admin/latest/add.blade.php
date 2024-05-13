@@ -37,9 +37,9 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="">Body</label>
-                        <textarea type="text" id="summernote" name="body" class="form-control @error('body') is-invalid @enderror" placeholder="Body">{{ isset($latest) ? $latest->body : old('body') }}</textarea>
-                        @error('body')
+                        <label for="">Deskripsi</label>
+                        <textarea type="text" id="summernote" name="desc" class="form-control @error('desc') is-invalid @enderror" placeholder="desc">{{ isset($latest) ? $latest->desc : old('desc') }}</textarea>
+                        @error('desc')
                         <div class="invalid-feedback">
                             {{ $message }}
                         </div>

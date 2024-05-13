@@ -16,7 +16,7 @@ class AdminBlogController extends Controller
         //
         $data = [
             'title' => 'Manajemen Blog',
-            'blog' => Blog::get(),
+            'blog' => Blog::orderBy('created_at', 'desc')->get(),
             'content' => 'admin/blog/index'
         ];
         return view('admin.layouts.wrapper', $data);
@@ -42,7 +42,7 @@ class AdminBlogController extends Controller
     {
         $data = $request->validate([
             'title' => 'required',
-            'body' => 'required',
+            'desc' => 'required',
             'cover' => 'required',
         ]);
 
@@ -102,7 +102,7 @@ class AdminBlogController extends Controller
         $blog = Blog::find($id);
         $data = $request->validate([
             'title' => 'required',
-            'body' => 'required',
+            'desc' => 'required',
             'cover' => 'required',
         ]);
 

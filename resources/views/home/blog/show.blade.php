@@ -418,7 +418,7 @@ img {
                         </div>
                     </div>
                     <div class="article-content">
-                        <p>{!! ($blog->body) !!}</p>
+                        <p>{!! ($blog->desc) !!}</p>
                         <blockquote>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                             <p class="blockquote-footer">Someone famous in <cite title="Source Title">Dick Grayson</cite></p>
@@ -453,7 +453,7 @@ img {
                 </div>
                 <div class="lpa-meta">
                     <a class="name" href="#">
-                        Rachel Roth
+                        Admin
                     </a>
                     <a class="date" href="#">
                       <i class="fas fa-calendar-alt"></i> <script>document.write(new Date().getFullYear())</script>

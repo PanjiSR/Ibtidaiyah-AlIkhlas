@@ -18,7 +18,7 @@ class AdminLatestController extends Controller
         //
         $data = [
             'title' => 'Manajemen Berita & Kegiatan Terbaru',
-            'latest' => Latest::get(),
+            'latest' => Latest::orderBy('created_at', 'desc')->get(),
             'blog' => Blog::get(),
             'content' => 'admin/latest/index'
         ];
@@ -45,7 +45,7 @@ class AdminLatestController extends Controller
     {
         $data = $request->validate([
             'title' => 'required',
-            'body' => 'required',
+            'desc' => 'required',
             'foto' => 'required',
         ]);
 
@@ -105,7 +105,7 @@ class AdminLatestController extends Controller
         $latest = Latest::find($id);
         $data = $request->validate([
             'title' => 'required',
-            'body' => 'required',
+            'desc' => 'required',
             // 'foto' => 'required',
         ]);
 

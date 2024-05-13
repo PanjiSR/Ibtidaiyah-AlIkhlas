@@ -1,21 +1,6 @@
-
-{{-- Hero 1 --}}
-    {{-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        
-        <div class="carousel-item active">
-          <img src="/img/fotbar_bajubatik.png" class="d-block w-100" alt="...">
-          <div class="centered text-center">Selamat Datang Di Website<br> Madrasah Ibtidaiyah Al-Ikhlas Pasir Mukti
-          <br><a href="" class="btn btn-primary">Selengkapnya</a>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div> --}}
-{{-- Hero 1 End --}}
-
 {{-- Hero 1 Update --}}
-<div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
+
+{{-- <div id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="/img/fotbar_bajubatik.png" class="d-block w-100" alt="...">
@@ -35,13 +20,45 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
-</div>
+</div> --}}
+
+
 {{-- End Hero 1 Update --}}
 
+{{-- Hero 1 Update --}}
+
+<div class="d-flex min-vh-100" lc-helper="background" style="background:url(/img/fotbar_bajubatik.png)  center / cover no-repeat; background-color:#444; background-blend-mode: overlay;">
+  <div class="align-self-center text-center text-light col-md-8 offset-md-2">
+      <div class="lc-block mb-2">
+          <div editable="rich">
+              <h1 class="display-1 fw-bolder">Ibtidaiyah Al-Ikhlas</h1>
+          </div>
+      </div>
+
+      <div class="lc-block">
+          <div editable="rich">
+              <p class="lead">Sekolah Dasar yang bernaung dibawah kementrian agama <br>
+                Pasir Mukti | Citeureup | Jawa Barat
+              </p>
+              {{-- <a href="#hero2" class="icon">Selengkapnya</a> --}}
+          </div>
+      </div>
+  </div>
+</div>
+
+{{-- End Hero 1 --}}
+
 {{-- Hero 2 --}}
+<section id="hero2">
 <div class="container-fluid" >
 <div class="container my-5">
   <div class="row align-items-center">
+    <div class="col-12 text-center" data-aos="fade-left" data-aos-duration="1000">
+      <div class="section-title mb-3 pb-2">
+          <h1 class="title mb-2 fw-bold" style="font-size: 3em">A Place Where Talents Grow and Dreams <br> Come True </h1>
+          {{-- <p class="text-muted para-desc mx-auto mb-0">Madrasah Ibtidaiyah Al-Ikhlas.</p> --}}
+      </div>
+    </div>
       <div class="col-lg-6 col-md-6 order-2 order-md-1 mt-4 pt-2 mt-sm-0 opt-sm-0">
           <div class="row align-items-center">
               <div class="col-lg-6 col-md-6 col-6">
@@ -56,7 +73,7 @@
 
                       <div class="col-12">
                           <div class="mt-4 pt-2 text-right">
-                              <a href="javascript:void(0)" class="btn btn-info">Read More <i class="mdi mdi-chevron-right"></i></a>
+                              <a href="javascript:void(0)" class="btn btn-info"> Lebih Lengkap <i class="mdi mdi-chevron-right"></i></a>
                           </div>
                       </div>
                   </div>
@@ -104,16 +121,17 @@
   <!--enr row-->
 </div>
 </div>
+</section>
 {{-- Hero 2 End--}}
 
 {{-- Hero 3 --}}
 <div class="container-fluid">
   <div class="container my-5">
-    <div class="row  ">
-      <div class="col-5" data-aos="fade-up" data-aos-duration="500">
+    <div class="row ">
+      <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-duration="500">
         <img src="/img/Hero2.png" alt="" class="img-fluid">
       </div>
-      <div class="col-6" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+      <div class="col-lg-6 col-md-12 mt-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
         <h1 class="title aripin"><strong>Sambutan Kepala Sekolah</strong></h1>
         <h4><strong>Aripin Sanusi Sanjaya, S.P.d</strong></h4>
         <p><strong>Kepala Sekolah MI Al-Ikhlas |</strong></p>
@@ -134,7 +152,7 @@
   <div class="row">
       <div class="col-12 text-center">
           <div class="section-title mb-3 pb-2">
-              <h4 class="title mb-2 fw-bold">BERITA &amp; KEGIATAN TERBARU </h4>
+              <h1 class="title mb-2 fw-bold">BERITA &amp; KEGIATAN TERBARU </h1>
               <p class="text-muted para-desc mx-auto mb-0">Berita dan Kegiatan Madrasah Ibtidaiyah Al-Ikhlas.</p>
           </div>
       </div><!--end col-->
@@ -142,22 +160,27 @@
 
   <div class="row">
 
-    @foreach ($latest as $item)
+    @foreach ($blog as $item)
+    
+      <div class="col-md-6 col-lg-4 mt-2 mb-3" data-aos="fade-up" data-aos-duration="1000">
+        <div class="blog-grid">
+            <div class="blog-grid-img position-relative">
+                <img alt="img" src="/{{ $item->cover }}" height="280">
+            </div>
+            <div class="blog-grid-text p-4">
+                <h3 class="h5 mb-3"><a href="/blog/show/{{ $item->id }}" style="color: black; text-decoration:none;"> {{ $item->title }} </a></h3>
+                <p class="display-30"> {!! Illuminate\Support\Str::limit($item->desc, 100) !!} </p>
+                <div class="meta meta-style2">
+                    <ul>
+                        <li><a href=""><i class="fas fa-calendar-alt" style="color: black; text-decoration:none;"> 
+                          <small> {{ $item->created_at }} </small>
+                        </i></a></li>
+                    </ul>
+                </div>
 
-      <div class="col-lg-4 col-md-6 mt-4 pt-2 " data-aos="fade-up"
-      data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
-          <div class="blog-post rounded border">
-              <div class="blog-img d-block overflow-hidden position-relative">
-                  <img src="/{{ $item->foto }}" class="img-fluid rounded-top" alt="">
-                  <div class="overlay rounded-top bg-dark"></div>
-              </div>
-              <div class="content p-3">
-                  <small> {{ $item->created_at }} </small>
-                  <h4 class="mt-2"><a href="/blog" class="text-dark title"> {{ $item->title }} </a></h4>
-                  <p class="text-muted mt-2"> {!! Illuminate\Support\Str::limit($item->body, 100) !!} </p>
-              </div>
-          </div><!--end blog post-->
-      </div><!--end col-->
+            </div>
+        </div>
+    </div>
 
     @endforeach
   </div><!--end row-->
@@ -173,7 +196,7 @@
       <h2 class="fw-bold">SOTK</h2>
       <p>Struktur Organisasi dan Tata Kerja Yayasan Al-Ikhlas</p>
       <!-- Single Advisor-->
-      <div class="col-12 col-sm-6 col-lg-3">
+      <div class="col-12 col-sm-6 col-lg-3 mt-3">
         <div class="single_advisor_profile" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1400">
           <!-- Team Thumb-->
           <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
@@ -188,7 +211,7 @@
         </div>
       </div>
       <!-- Single Advisor-->
-      <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
+      <div class="col-12 col-sm-6 col-lg-3 mt-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
         <div class="single_advisor_profile">
           <!-- Team Thumb-->
           <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
@@ -203,7 +226,7 @@
         </div>
       </div>
       <!-- Single Advisor-->
-      <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+      <div class="col-12 col-sm-6 col-lg-3 mt-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
         <div class="single_advisor_profile">
           <!-- Team Thumb-->
           <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="">
@@ -218,7 +241,7 @@
         </div>
       </div>
       <!-- Single Advisor-->
-      <div class="col-12 col-sm-6 col-lg-3" data-aos="fade-left" data-aos-duration="1000">
+      <div class="col-12 col-sm-6 col-lg-3 mt-3" data-aos="fade-left" data-aos-duration="1000">
         <div class="single_advisor_profile">
           <!-- Team Thumb-->
           <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="">

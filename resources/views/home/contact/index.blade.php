@@ -137,7 +137,17 @@
             <div class="col-lg-6">
                 <div class="section-title">
                     <h2>Hubungi Kami</h2>
-                    <p>I design and develop services for customers of all sizes, specializing in creating stylish, modern websites</p>
+                    <div class="social-share nav mt-3">
+                        <a class="instagram" href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="tiktok" href="#">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a class="linkedin" href="#">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -179,24 +189,19 @@
                     <h5>Mail</h5>
                     <p>info@domainname.com</p>
                 </div>
-                <div class="contact-name">
+                {{-- <div class="contact-name">
                     <h5>Visit School</h5>
-                    <p>Warnwe Park Streetperrine, <br>FL 33157 New York City</p>
-                </div>
+                    <p>Gg Jabon,Kp.Dukuh RT.05/01 <br>Desa Pasir Mukti <br>Kecamatan Citeureup, Bogor</p>
+                </div> --}}
                 <div class="contact-name">
                     <h5>Phone</h5>
                     <p>+01 123 654 8096</p>
                 </div>
-                <div class="social-share nav">
-                    <a class="instagram" href="#">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a class="tiktok" href="#">
-                        <i class="fab fa-tiktok"></i>
-                    </a>
-                    <a class="linkedin" href="#">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
+
+                <div class="contact-name">
+                    <h5>Peta Lokasi</h5>
+                    <p>Madrasah Ibtidaiyah Al-Ikhlas</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3964.0924902941624!2d106.8953899!3d-6.5099762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMzAnMzYuOSJTIDEwNsKwNTMnNDMuOCJF!5e0!3m2!1sid!2sid!4v1715408092100!5m2!1sid!2sid" class="mt-2" style="border:0; border-radius:20px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
         </div>
