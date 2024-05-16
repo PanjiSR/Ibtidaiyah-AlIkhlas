@@ -7,4 +7,3 @@
 //         navbar.classList.replace('nav-color', 'bg-transparent');
 //     }
 // });
-

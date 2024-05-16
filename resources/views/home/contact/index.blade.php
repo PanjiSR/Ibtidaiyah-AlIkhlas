@@ -1,211 +1,265 @@
-{{-- Style Contact--}}
+{{-- Style --}}
+
 <style>
-    .contact-name {
-  margin-bottom: 30px;
-}
-.contact-name h5 {
-  font-size: 22px;
-  color: #20247b;
-  margin-bottom: 5px;
-  font-weight: 600;
-}
-.contact-name p {
-  font-size: 18px;
-  margin: 0;
-}
+/*======= Contact ======*/
 
-.social-share a {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  border-radius: 50%;
-  color: #ffffff;
-  text-align: center;
-  margin-right: 10px;
-}
-.social-share .instagram {
-  box-shadow: 0 8px 30px -4px rgba(234, 76, 137, 0.5);
-  background-color: #ea4c89;
-}
-.social-share .tiktok {
-  box-shadow: 0 8px 30px -4px rgba(0, 103, 255, 0.5);
-  background-color: #0067ff;
-}
-.social-share .linkedin {
-  box-shadow: 0 8px 30px -4px rgba(1, 119, 172, 0.5);
-  background-color: #0177ac;
-}
-
-.contact-form .form-control {
-  border: none;
-  border-bottom: 1px solid #20247b;
-  background: transparent;
-  border-radius: 0;
-  padding-left: 0;
+.form-control {
   box-shadow: none !important;
+  outline: none !important;
+  border: 2px solid #cecece;
+  height: 38px;
 }
-.contact-form .form-control:focus {
-  border-bottom: 1px solid #fc5356;
+.form-control:hover ,.form-control:focus{
+  border-color: #97a0af;
 }
-.contact-form .form-control.invalid {
-  border-bottom: 1px solid #ff0000;
+
+
+.error {
+  margin: 8px 0px;
+  display: none;
+  color: red;
 }
-.contact-form .send {
-  margin-top: 20px;
+#ajaxsuccess {
+  font-size: 16px;
+  width: 100%;
+  display: none;
+  clear: both;
+  margin: 8px 0px;
 }
-@media (max-width: 767px) {
-  .contact-form .send {
-    margin-bottom: 20px;
+.con_sub_text {
+  margin: 20px 0px;
+  font-size: 15px;
+}
+
+.contact-detail-box {
+  margin-bottom: 50px;
+}
+
+.contact-detail-box address {
+  font-size: 14px;
+}
+.contact-map {
+  background-color: #ededed;
+}
+
+.title-box .border,.btn-primary,.back-to-top,
+.logo i,.question-q-box,.social-circle li a:hover {
+  background-color: #22c55e !important;
+}
+.title-box .title-alt,.text-colored,.footer a:hover,
+.navbar-custom .navbar-nav li a:hover,
+.navbar-custom .navbar-nav li a:focus,
+.navbar-custom .navbar-nav li a:active,
+.navbar-custom .navbar-nav li.active a {
+  color: #22c55e;
+}
+
+.btn-primary {
+  border: 1px solid #22c55e !important;
+}
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary:focus,
+.btn-primary:hover,
+.open > .dropdown-toggle.btn-primary,
+.btn-primary.active.focus, .btn-primary.active:focus, 
+.btn-primary.active:hover, .btn-primary:active.focus, 
+.btn-primary:active:focus, .btn-primary:active:hover, 
+.open>.dropdown-toggle.btn-primary.focus, 
+.open>.dropdown-toggle.btn-primary:focus, 
+.open>.dropdown-toggle.btn-primary:hover {
+  background-color: #22c55e !important;
+  border: 1px solid #22c55e !important;
+}
+
+.btn-shadow.btn-primary {
+  box-shadow: 1px 5px 9px #22c55e;
+}
+
+
+
+/*======= Responsive ======*/
+@media (min-width: 768px) {
+    .nav-custom-left {
+		margin-left: 5%;
+	}
+  .navbar-nav>li>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .contact-page .col-sm-6 {
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
-.section-title h2 {
-    font-weight: 700;
-    color: #20247b;
-    font-size: 45px;
-    margin: 0 0 15px;
-    border-left: 5px solid #fc5356;
-    padding-left: 15px;
+@media (max-width: 768px) {
+  .navbar-custom {
+        -moz-box-shadow: 0 2px 2px rgba(0,0,0,.1);
+    -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.1);
+    box-shadow: 0 2px 2px rgba(0,0,0,.1);
+  }
+  .screen-space {
+    margin: 0px auto 50px auto;
+  }
+  .feature-detail {
+    padding: 0px 0px 50px 30px !important;
+  }
+  .footer h5 {
+    margin-top: 30px;
+  }
 }
-.section-title {
-    padding-bottom: 45px;
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .blog-wrapper .blog-item {
+    width: 50%;
+  }
+  .navbar-custom .navbar-nav li a {
+    font-size: 12px;
+  }
+  .blog-detail-box {
+  padding-right: 0px;
 }
-.contact-form .send {
-    margin-top: 20px;
 }
-.px-btn {
-    padding: 0 50px 0 20px;
-    line-height: 60px;
-    position: relative;
-    display: inline-block;
-    color: #20247b;
-    background: none;
-    border: none;
+@media only screen and (min-width: 767px) and (max-width: 991px){
+  
 }
-.px-btn:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 30px;
-    background: transparent;
-    border: 1px solid rgba(252, 83, 86, 0.6);
-    border-right: 1px solid transparent;
-    -moz-transition: ease all 0.35s;
-    -o-transition: ease all 0.35s;
-    -webkit-transition: ease all 0.35s;
-    transition: ease all 0.35s;
-    width: 60px;
-    height: 60px;
+@media (max-width: 767px) {
+  .blog-wrapper .blog-item {
+    width: 100%;
+  }
+  .logo {
+    margin-top: 7px;
+  }
+  .blog-detail-box {
+  padding-right: 0px;
 }
-.px-btn .arrow {
-    width: 13px;
-    height: 2px;
-    background: currentColor;
-    display: inline-block;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    right: 25px;
-}
-.px-btn .arrow:after {
-    width: 8px;
-    height: 8px;
-    border-right: 2px solid currentColor;
-    border-top: 2px solid currentColor;
-    content: "";
-    position: absolute;
-    top: -3px;
-    right: 0;
-    display: inline-block;
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
 }
 </style>
-{{-- End Style Contact --}}
 
-{{-- Content of Contact --}}
+{{-- End Style --}}
 
-<section class="section gray-bg my-5" id="contactus">
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="section-title">
-                    <h2>Hubungi Kami</h2>
-                    <div class="social-share nav mt-3">
-                        <a class="instagram" href="#">
-                            <i class="fa-brands fa-instagram"></i>
-                        </a>
-                        <a class="tiktok" href="#">
-                            <i class="fab fa-tiktok"></i>
-                        </a>
-                        <a class="linkedin" href="#">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+{{-- Content --}}
+
+<div class="container bootstrap snippets bootdeys my-5">
+    <div class="row text-center mt-5">
+      <div class="col-sm-4">
+        <div class="contact-detail-box">
+          <i class="fas fa-th fa-3x text-colored"></i>
+          <h4>Hubungi Kami</h4>
+          <abbr title="Phone"><i class="fa-solid fa-phone-flip"></i></abbr> (123) 456-7890<br>
+          <a href="mailto:email@email.com" class="text-muted"><i class="fa-solid fa-envelope"></i> email@email.com</a>
         </div>
-        <div class="row flex-row-reverse">
-            <div class="col-md-7 col-lg-8 m-15px-tb">
-                <div class="contact-form">
-                     <form action="/contact/send" method="post" class="contactform contact_form" id="contact_form">
-                        <div class="row">
-                        {{-- <form action="/contact/send" method="POST"> --}}
-                            @csrf
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input name="name" type="text" placeholder="Nama Lengkap" class="form-control @error('name') is-invalid @enderror"> 
-                                    @error('name')
-                                    <div class="invalid-feedback">
-                                        {{ $message }}
-                                    </div>
-                                    @enderror
-                                </div>
-                            </div>
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <textarea name="desc" placeholder="Pesan" class="form-control @error('desc') is-invalid @enderror" rows="3"></textarea> 
-                                    @error('desc')
-                                    <div class="invalid-feedback">
-                                        {{ $message }}
-                                    </div>
-                                    @enderror
-                                </div>
-                            </div>
-                            <button type="submit" class="btn btn-success mt-3">Kirim Pesan</button>
-                        {{-- </form> --}}
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-md-5 col-lg-4 m-15px-tb">
-                <div class="contact-name">
-                    <h5>Mail</h5>
-                    <p>info@domainname.com</p>
-                </div>
-                {{-- <div class="contact-name">
-                    <h5>Visit School</h5>
-                    <p>Gg Jabon,Kp.Dukuh RT.05/01 <br>Desa Pasir Mukti <br>Kecamatan Citeureup, Bogor</p>
-                </div> --}}
-                <div class="contact-name">
-                    <h5>Phone</h5>
-                    <p>+01 123 654 8096</p>
-                </div>
+      </div><!-- end col -->
 
-                <div class="contact-name">
-                    <h5>Peta Lokasi</h5>
-                    <p>Madrasah Ibtidaiyah Al-Ikhlas</p>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3964.0924902941624!2d106.8953899!3d-6.5099762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMzAnMzYuOSJTIDEwNsKwNTMnNDMuOCJF!5e0!3m2!1sid!2sid!4v1715408092100!5m2!1sid!2sid" class="mt-2" style="border:0; border-radius:20px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
+      <div class="col-sm-4">
+        <div class="contact-detail-box">
+          <i class="fa-solid fa-location-dot fa-3x text-colored"></i>
+          <h4>Lokasi Kami</h4>
+          <address>
+          Gg Jabon, Kp.Dukuh RT.005/001<br>
+          Pasir Mukti, Citeureup, Bogor<br>
+        </address>
         </div>
+      </div><!-- end col -->
+
+      <div class="col-sm-4">
+        <div class="contact-detail-box">
+          <i class="fas fa-book fa-3x text-colored"></i>
+          <h4>Layanan 24 Jam</h4>
+
+          <p>MI Al-Ikhlas</p>
+          <h4 class="text-muted">1234 567 890</h4>
+        </div>
+      </div><!-- end col -->
+
     </div>
-</section>
+    <!-- end row -->
+
+
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3964.0924902941624!2d106.8953899!3d-6.5099762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMzAnMzYuOSJTIDEwNsKwNTMnNDMuOCJF!5e0!3m2!1sid!2sid!4v1715408092100!5m2!1sid!2sid" class="mt-2" style="border:0; border-radius:20px; width: 100%; height: 250px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div><!-- end col -->
+
+      <!-- Contact form -->
+      
+      <div class="col-sm-6">
+        <form role="form" name="ajax-form" id="ajax-form" action="/contact/send" method="post" class="form-main">
+            @csrf
+          <div class="form-group">
+            <label for="Name">Nama Lengkap</label>
+            <input name="name" type="text" placeholder="Nama Lengkap" class="form-control @error('name') is-invalid @enderror"> 
+            @error('name')
+            <div class="invalid-feedback">
+                {{ $message }}
+            </div>
+            @enderror
+          </div> <!-- /Form-name -->
+
+          <div class="form-group mt-3">
+            <label for="Desc">Pesan</label>
+            <textarea name="desc" placeholder="Pesan" class="form-control @error('desc') is-invalid @enderror" rows="3"></textarea> 
+                @error('desc')
+                <div class="invalid-feedback">
+                    {{ $message }}
+                </div>
+                @enderror
+          </div> <!-- /col -->
+
+          <div class="row">            
+            <div class="col-xs-12">
+              <button type="submit" class="btn btn-primary btn-shadow btn-rounded w-md mt-3" id="send">Submit</button>
+            </div> <!-- /col -->
+          </div> <!-- /row -->
+
+        </form> <!-- /form -->
+      </div> <!-- end col -->
+
+    </div> <!-- end row -->
+        
+  </div>
 
 {{-- End Content --}}
+
+
+
+
+{{-- 
+<form action="/contact/send" method="post" class="contactform contact_form" id="contact_form">
+    <div class="row">
+    {{-- <form action="/contact/send" method="POST"> --}}
+        {{-- @csrf
+        <div class="col-md-6">
+            <div class="form-group">
+                <input name="name" type="text" placeholder="Nama Lengkap" class="form-control @error('name') is-invalid @enderror"> 
+                @error('name')
+                <div class="invalid-feedback">
+                    {{ $message }}
+                </div>
+                @enderror
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="form-group">
+                <textarea name="desc" placeholder="Pesan" class="form-control @error('desc') is-invalid @enderror" rows="3"></textarea> 
+                @error('desc')
+                <div class="invalid-feedback">
+                    {{ $message }}
+                </div>
+                @enderror
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3 btn-lg">Kirim Pesan</button>
+    </div>
+</form> --}}
+
+
+{{-- <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3964.0924902941624!2d106.8953899!3d-6.5099762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMzAnMzYuOSJTIDEwNsKwNTMnNDMuOCJF!5e0!3m2!1sid!2sid!4v1715408092100!5m2!1sid!2sid" class="mt-2" style="border:0; border-radius:20px; width: 100%; height: 360px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> --}}

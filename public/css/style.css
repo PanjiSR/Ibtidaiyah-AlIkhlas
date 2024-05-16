@@ -6,19 +6,67 @@ html {
     scroll-behavior: smooth;
 }
 
-
+/* Navigation */
 .navbar {
     font-weight: 400;
     z-index: 3;
     font-size: 1em;
+    box-sizing: border-box;
 }
 .navbar li a{
     color: #020710;
 }
 
 .nav-color {
-    background-color: #58c268;
+    background-color: #f7f7f7;
     transition: all ease-in-out .1s;
+}
+
+.navbar-nav a {
+    text-decoration: none;
+    font-size: .9em;
+    /* color: #cee1f8 !important; */
+}
+
+.active {
+    color: #6dc77a !important;
+    border-bottom: 2px solid #6dc77a !important;
+}
+
+
+.navbar-nav .login {
+    border: 1px solid #22c55e;
+    background-color: #22c55e;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.navbar-nav .ppdb {
+    border: 1px solid #3b82f6;
+    background-color: #3b82f6;
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(34,197,94,255)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: #22c55e;
+}
+
+/* Navigation end */
+
+.btn-primary {
+    background-color: #22c55e !important;
+    border: none !important;
 }
 
 .bg-transparent {
@@ -70,10 +118,6 @@ a {
  color: #6dc77a;
 }
 
-.login {
-    color: #f4f4f4;
-    text-decoration: none;
-}
 
 /* Hero 1 Carousel */
 /* #hero {

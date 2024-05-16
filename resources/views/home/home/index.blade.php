@@ -31,7 +31,7 @@
   <div class="align-self-center text-center text-light col-md-8 offset-md-2">
       <div class="lc-block mb-2">
           <div editable="rich">
-              <h1 class="display-1 fw-bolder">Ibtidaiyah Al-Ikhlas</h1>
+              <h3 class="display-4 fw-bolder">Yayasan MI Al-Ikhlas</h3>
           </div>
       </div>
 
@@ -73,7 +73,7 @@
 
                       <div class="col-12">
                           <div class="mt-4 pt-2 text-right">
-                              <a href="javascript:void(0)" class="btn btn-info"> Lebih Lengkap <i class="mdi mdi-chevron-right"></i></a>
+                              <a href="javascript:void(0)" class="btn btn-primary"> Lebih Lengkap <i class="mdi mdi-chevron-right"></i></a>
                           </div>
                       </div>
                   </div>
@@ -109,11 +109,11 @@
 
       <div class="col-lg-6 col-md-6 col-12 order-1 order-md-2" data-aos="fade-left" data-aos-duration="1000">
           <div class="section-title ml-lg-5">
-              <h5 class="title text-custom font-weight-normal mb-3">Madrasah Ibtidaiyah Al-Ikhlas Pasir Mukti</h5>
+              <h5 class="title text-custom font-weight-normal mb-3">Madrasah Ibtidaiyah (MI) Al-Ikhlas Pasir Mukti</h5>
               <h5 class="mb-4">
                 “Mendidik Dengan Rasa Penuh Kasih Sayang" <br />
               </h5>
-              <p class="text-muted mb-0">Madrasah Ibtidaiyah Al-Ikhlas Pasirmukti adalah lembaga formal setingkat Sekolah Dasar (SD) yang bernaung di bawah Kementerian Agama. Kami berupaya dalam mendidik siswa dan siswi kami dengan rasa penuh kasih sayang. Kepedulian kami terhadap capaian akademik berbanding lurus dengan kepedulian terhadap pembagunan insan berkarakter dengan penguatan jati diri sebagai anak bangsa yang mencintai Agama dan Negara Kesatuan Republik Indonesia dan Kami mayakini sesungguhnya komitmen dan konsisten merupakan pondasi dalam mewujudkan keberhasilan. kami meyakini bahwa upaya dalam mendidik generasi penerus dan berkontribusi dalam memerangi kebodohan merupakan pengabdian dalam mewujudkan cita-cita negara sehingga bisa menjadi negara yang maju. Dengan Inilah cara kami mendidik dan menggapai ridha Allah swt dan Semoga Allah swt memberikan pahala dan balasan kebaikan tak terhingga kepada para guru-guru kita yang mana mereka telah berjuang tanpa pamrih untuk kebaikan dan bekal kita.</p>
+              <p class="text-muted mb-0">Madrasah Ibtidaiyah (MI) Al-Ikhlas Pasirmukti adalah lembaga formal setingkat Sekolah Dasar (SD) yang bernaung di bawah Kementerian Agama. Kami berupaya dalam mendidik siswa dan siswi kami dengan rasa penuh kasih sayang. Kepedulian kami terhadap capaian akademik berbanding lurus dengan kepedulian terhadap pembagunan insan berkarakter dengan penguatan jati diri sebagai anak bangsa yang mencintai Agama dan Negara Kesatuan Republik Indonesia dan Kami mayakini sesungguhnya komitmen dan konsisten merupakan pondasi dalam mewujudkan keberhasilan. kami meyakini bahwa upaya dalam mendidik generasi penerus dan berkontribusi dalam memerangi kebodohan merupakan pengabdian dalam mewujudkan cita-cita negara sehingga bisa menjadi negara yang maju. Dengan Inilah cara kami mendidik dan menggapai ridha Allah swt dan Semoga Allah swt memberikan pahala dan balasan kebaikan tak terhingga kepada para guru-guru kita yang mana mereka telah berjuang tanpa pamrih untuk kebaikan dan bekal kita.</p>
           </div>
       </div>
       <!--end col-->
@@ -138,7 +138,7 @@
         <div>
           
         </div>
-        <p>Assalamu'alaikum Warahmatullahi Wabarakatuh <br> <br> <br> <br>Dengan penuh kegembiraan, kami menyambut Anda di website resmi <strong>Madrasah Ibtidaiyah Al-Ikhlas Pasir Mukti</strong>. Di sini, kami mengundang Anda untuk menjelajahi dunia pendidikan Islam yang berbudaya, berkualitas, dan penuh keberkahan. Mari bersama-sama membangun masa depan yang gemilang bagi generasi penerus umat Islam.</p>
+        <p>Assalamu'alaikum Warahmatullahi Wabarakatuh <br> <br> <br> <br>Dengan penuh kegembiraan, kami menyambut Anda di website resmi <strong>Madrasah Ibtidaiyah (MI) Al-Ikhlas Pasir Mukti</strong>. Di sini, kami mengundang Anda untuk menjelajahi dunia pendidikan Islam yang berbudaya, berkualitas, dan penuh keberkahan. Mari bersama-sama membangun masa depan yang gemilang bagi generasi penerus umat Islam.</p>
         <a href="/profile" class="btn btn-primary mt-2">Selengkapnya</a>
       </div>
     </div>
@@ -197,7 +197,7 @@
       <p>Struktur Organisasi dan Tata Kerja Yayasan Al-Ikhlas</p>
       <!-- Single Advisor-->
       <div class="col-12 col-sm-6 col-lg-3 mt-3">
-        <div class="single_advisor_profile" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1400">
+        <div class="single_advisor_profile" data-aos="fade-up" data-aos-duration="1000">
           <!-- Team Thumb-->
           <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
             <!-- Social Info-->
@@ -211,7 +211,7 @@
         </div>
       </div>
       <!-- Single Advisor-->
-      <div class="col-12 col-sm-6 col-lg-3 mt-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
+      <div class="col-12 col-sm-6 col-lg-3 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
         <div class="single_advisor_profile">
           <!-- Team Thumb-->
           <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
@@ -226,7 +226,7 @@
         </div>
       </div>
       <!-- Single Advisor-->
-      <div class="col-12 col-sm-6 col-lg-3 mt-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+      <div class="col-12 col-sm-6 col-lg-3 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
         <div class="single_advisor_profile">
           <!-- Team Thumb-->
           <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="">
@@ -241,7 +241,7 @@
         </div>
       </div>
       <!-- Single Advisor-->
-      <div class="col-12 col-sm-6 col-lg-3 mt-3" data-aos="fade-left" data-aos-duration="1000">
+      <div class="col-12 col-sm-6 col-lg-3 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
         <div class="single_advisor_profile">
           <!-- Team Thumb-->
           <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="">
