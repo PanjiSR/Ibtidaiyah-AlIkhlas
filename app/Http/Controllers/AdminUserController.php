@@ -20,7 +20,9 @@ class AdminUserController extends Controller
             'user' => User::get(),
             'content' => 'admin/user/index'
         ];
-        return view('admin.layouts.wrapper', $data);
+        return view('admin.layouts.wrapper', $data, [
+            "title" => "User"
+        ]);
     }
 
     /**

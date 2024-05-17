@@ -49,12 +49,14 @@
                   <p>Blog</p>
                 </a>
               </li>
+              @can('admin')
               <li class="nav-item">
-                <a href="/admin/posts/category" class="nav-link {{ Request::is('admin/posts/category') ? 'active' : "" }} disabled">
+                <a href="/admin/posts/category" class="nav-link {{ Request::is('admin/posts/category') ? 'active' : "" }}">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Kategori</p>
                 </a>
               </li>
+              @endcan
             </ul>
           </li> 
 

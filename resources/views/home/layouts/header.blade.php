@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-md bg-light nav-color shadow-sm position-fixed w-100">
       <div class="container-fluid mx-3">
         <a class="navbar-brand madrasah" href="/">
-          <img src="/img/nav-black.png" width="250" alt=""></a>
+          <img src="/img/logo-nav-black.png" width="250" alt=""></a>
         <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,13 +22,13 @@
               <a class=" {{ Request::is('contact') ? 'active' : '' }} " href="/contact">Hubungi Kami</a>
             </li>
             <li>
-              <a href="#" class="ppdb">Download Brosur</a>
+              <a href="#" class="brosur">Download Brosur</a>
             </li>
             <li>
             @auth
             <a href="/admin/dashboard" class="login"><i class="fas fa-user"></i> Dashboard</a>
             @else
-            <a href="/login" class="login"> <i class="fas fa-sign-in-alt"></i> Login</a>
+            <a href="/login" class="login"> <i class="fas fa-sign-in-alt"></i> Masuk</a>
             @endauth
             </li>
 

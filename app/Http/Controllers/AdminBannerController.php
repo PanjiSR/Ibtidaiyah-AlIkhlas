@@ -19,7 +19,9 @@ class AdminBannerController extends Controller
             'banner' => Banner::get(),
             'content' => 'admin/banner/index'
         ];
-        return view('admin.layouts.wrapper', $data);
+        return view('admin.layouts.wrapper', $data, [
+            "title" => "Banner"
+        ]);
     }
 
     /**

@@ -22,7 +22,9 @@ class AdminLatestController extends Controller
             'blog' => Blog::get(),
             'content' => 'admin/latest/index'
         ];
-        return view('admin.layouts.wrapper', $data);
+        return view('admin.layouts.wrapper', $data,[
+            "title" => "Latest"
+        ]);
     }
 
     /**

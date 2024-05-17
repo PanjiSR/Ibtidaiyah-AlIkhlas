@@ -128,8 +128,8 @@
 <div class="container-fluid">
   <div class="container my-5">
     <div class="row ">
-      <div class="col-lg-5 col-md-12" data-aos="fade-up" data-aos-duration="500">
-        <img src="/img/Hero2.png" alt="" class="img-fluid">
+      <div class="col-lg-5 col-md-12 align-items-center" data-aos="fade-up" data-aos-duration="500">
+        <img src="/img/kepala-sekolah.png" alt="" class="img-fluid img-cover rounded-circle" width="400" style="box-shadow: 0 6px 3px rgba(182, 182, 182, 0.75)">
       </div>
       <div class="col-lg-6 col-md-12 mt-3" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
         <h1 class="title aripin"><strong>Sambutan Kepala Sekolah</strong></h1>
@@ -183,6 +183,7 @@
     </div>
 
     @endforeach
+    <a href="/blog" class="text-end mt-3 struktur" data-aos="fade-up" data-aos-duration="1000"><b>Lihat Berita Lebih Lengkap</b></a>
   </div><!--end row-->
 </div>
 </div>
@@ -190,16 +191,33 @@
 
 
 {{-- Hero 5 --}}
-<div class="container-fluid" style="background-color: #e8e6d9">
+<div class="container-fluid" style="background-color: ">
   <div class="container my-5">
     <div class="row">
-      <h2 class="fw-bold">SOTK</h2>
-      <p>Struktur Organisasi dan Tata Kerja Yayasan Al-Ikhlas</p>
+      <h1 class="title fw-bold" data-aos="fade-up" data-aos-duration="1000">SOTK</h1>
+      <p data-aos="fade-up" data-aos-duration="1000">Struktur Organisasi dan Tata Kerja Yayasan Al-Ikhlas</p>
+
       <!-- Single Advisor-->
       <div class="col-12 col-sm-6 col-lg-3 mt-3">
-        <div class="single_advisor_profile" data-aos="fade-up" data-aos-duration="1000">
+        <div class="single_advisor_profile" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
           <!-- Team Thumb-->
-          <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+          <div class="advisor_thumb"><img src="/img/kepala-sekolah.png"  class="img-fluid" alt="">
+            <!-- Social Info-->
+            <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
+          </div>
+          <!-- Team Details-->
+          <div class="single_advisor_details_info">
+            <h6>Aripin Sanusi Sanjaya, S.Pd</h6>
+            <p class="designation">Kelapa Sekolah MI Al-Ikhlas</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Single Advisor-->
+      <div class="col-12 col-sm-6 col-lg-3 mt-3">
+        <div class="single_advisor_profile" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+          <!-- Team Thumb-->
+          <div class="advisor_thumb"><img src="/img/operator.png" class="img-fluid" alt="">
             <!-- Social Info-->
             <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
           </div>
@@ -210,52 +228,39 @@
           </div>
         </div>
       </div>
+
       <!-- Single Advisor-->
-      <div class="col-12 col-sm-6 col-lg-3 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-        <div class="single_advisor_profile">
+      <div class="col-12 col-sm-6 col-lg-3 mt-3">
+        <div class="single_advisor_profile" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
           <!-- Team Thumb-->
-          <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="">
+          <div class="advisor_thumb"><img src="/img/operator.png" class="img-fluid" alt="">
             <!-- Social Info-->
             <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
           </div>
           <!-- Team Details-->
           <div class="single_advisor_details_info">
-            <h6>Nazrul Islam</h6>
-            <p class="designation">UI Designer</p>
+            <h6>Samantha Sarah</h6>
+            <p class="designation">Founder &amp; CEO</p>
           </div>
         </div>
       </div>
+
       <!-- Single Advisor-->
-      <div class="col-12 col-sm-6 col-lg-3 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-        <div class="single_advisor_profile">
+      <div class="col-12 col-sm-6 col-lg-3 mt-3">
+        <div class="single_advisor_profile" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
           <!-- Team Thumb-->
-          <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar6.png" alt="">
+          <div class="advisor_thumb"><img src="/img/operator.png" class="img-fluid" alt="">
             <!-- Social Info-->
             <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
           </div>
           <!-- Team Details-->
           <div class="single_advisor_details_info">
-            <h6>Riyadh Khan</h6>
-            <p class="designation">Developer</p>
+            <h6>Samantha Sarah</h6>
+            <p class="designation">Founder &amp; CEO</p>
           </div>
         </div>
       </div>
-      <!-- Single Advisor-->
-      <div class="col-12 col-sm-6 col-lg-3 mt-3" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-        <div class="single_advisor_profile">
-          <!-- Team Thumb-->
-          <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar2.png" alt="">
-            <!-- Social Info-->
-            <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
-          </div>
-          <!-- Team Details-->
-          <div class="single_advisor_details_info">
-            <h6>Niloy Islam</h6>
-            <p class="designation">Marketing Manager</p>
-          </div>
-        </div>
-      </div>
-      <a href="/profile" class="text-end mt-2 struktur"><b>Lihat Struktur Lebih Lengkap</b></a>
+      <a href="/profile" class="text-end mt-3 struktur" data-aos="fade-up" data-aos-duration="1000"><b>Lihat Struktur Lebih Lengkap</b></a>
     </div>
   </div>
 </div>

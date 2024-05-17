@@ -40,4 +40,22 @@
     </div>
     <!-- /.info-box -->
 </div>
+
+<div class="col-12 col-sm-6 col-md-4">
+  <div class="info-box">
+    <span class="info-box-icon bg-info elevation-1"><i class="fas fa-user"></i></span>
+
+    <div class="info-box-content">
+      <span class="info-box-text">Pesan</span>
+      <span class="info-box-number">
+        {{ $pesan }}
+        <small>Pesan</small>
+      </span>
+    </div>
+    <!-- /.info-box-content -->
+  </div>
+  <!-- /.info-box -->
 </div>
+
+</div>
+

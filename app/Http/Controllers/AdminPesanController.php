@@ -21,7 +21,9 @@ class AdminPesanController extends Controller
             'pesan' => Pesan::orderBy('created_at', 'desc')->get(),
             'content' => 'admin/pesan/index'
         ];
-        return view('admin.layouts.wrapper', $data);
+        return view('admin.layouts.wrapper', $data, [
+            "title" => "Pesan"
+        ]);
     }
 
     /**

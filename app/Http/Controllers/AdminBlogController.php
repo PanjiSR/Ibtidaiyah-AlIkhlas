@@ -19,7 +19,9 @@ class AdminBlogController extends Controller
             'blog' => Blog::orderBy('created_at', 'desc')->get(),
             'content' => 'admin/blog/index'
         ];
-        return view('admin.layouts.wrapper', $data);
+        return view('admin.layouts.wrapper', $data, [
+            "title" => "Blog"
+        ]);
     }
 
     /**
@@ -71,7 +73,7 @@ class AdminBlogController extends Controller
     {
         //
         $data = [
-            'title' => 'Edit blog',
+            'title' => 'Detail blog',
             'blog' => Blog::find($id),
             'content' => 'admin/blog/show'
         ];
@@ -103,7 +105,7 @@ class AdminBlogController extends Controller
         $data = $request->validate([
             'title' => 'required',
             'desc' => 'required',
-            'cover' => 'required',
+            // 'cover' => 'required',
         ]);
 
         // Upload cover

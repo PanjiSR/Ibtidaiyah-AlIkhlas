@@ -17,12 +17,12 @@
                         <td>{{ $item->headline }}</td>
                         <td>
                             <div class="d-flex">
-                            <a href="/admin/banner/{{ $item->id }}/edit" class="btn btn-success mx-2">Edit</a>
+                            <a href="/admin/banner/{{ $item->id }}/edit" class="btn btn-success mx-2"><i class="fas fa-pen"></i> Edit</a>
 
                             <form action="/admin/banner/{{ $item->id }}" method="POST">
                                 @method('delete')
                                 @csrf
-                                <button type="submit" class="btn btn-danger">Hapus</button>
+                                <button type="submit" class="btn btn-danger"><i class="fas fa-trash"></i> Hapus</button>
                             </form>
                             </div>
                             {{-- <a href="#" class="btn btn-danger">Hapus</a> --}}

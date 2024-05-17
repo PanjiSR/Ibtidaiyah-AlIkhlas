@@ -572,4 +572,21 @@ img {
     </div>
 </div>
 
+
+    <!-- Single Advisor-->
+    <div class="col-12 col-sm-6 col-lg-3 mt-3">
+      <div class="single_advisor_profile" data-aos="fade-up" data-aos-duration="1000">
+        <!-- Team Thumb-->
+        <div class="advisor_thumb"><img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+          <!-- Social Info-->
+          <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
+        </div>
+        <!-- Team Details-->
+        <div class="single_advisor_details_info">
+          <h6>Samantha Sarah</h6>
+          <p class="designation">Founder &amp; CEO</p>
+        </div>
+      </div>
+    </div>
+
 {{-- End Content --}}
