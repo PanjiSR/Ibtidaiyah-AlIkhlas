@@ -58,22 +58,13 @@
               </li>
               @endcan
             </ul>
-          </li> 
-
-          <li class="nav-item">
-            <a href="/admin/banner/" class="nav-link {{ Request::is('admin/banner*') ? 'active' : '' }}">
-              <i class="nav-icon fas fa-image"></i>
-              <p>
-                Banner
-              </p>
-            </a>
-          </li>     
+          </li>      
           
           <li class="nav-item">
             <a href="/admin/latest/" class="nav-link {{ Request::is('admin/latest*') ? 'active' : '' }}">
               <i class="nav-icon fas fa-file-import"></i>
               <p>
-                B & K Terbaru
+                Latest (Terbaru)
               </p>
             </a>
           </li>     
@@ -82,6 +73,15 @@
           <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-2 text-muted">
             <span>Administrator</span>
           </h6>
+          <li class="nav-item">
+            <a href="/admin/banner/" class="nav-link {{ Request::is('admin/banner*') ? 'active' : '' }}">
+              <i class="nav-icon fas fa-image"></i>
+              <p>
+                Banner
+              </p>
+            </a>
+          </li>
+
           <li class="nav-item">
             <a href="/admin/user" class="nav-link {{ Request::is('admin/user*') ? 'active' : '' }}">
               <i class="nav-icon fas fa-user"></i>

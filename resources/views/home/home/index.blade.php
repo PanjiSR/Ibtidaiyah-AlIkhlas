@@ -31,13 +31,13 @@
   <div class="align-self-center text-center text-light col-md-8 offset-md-2">
       <div class="lc-block mb-2">
           <div editable="rich">
-              <h3 class="display-4 fw-bolder">Yayasan MI Al-Ikhlas</h3>
+              <h3 class="display-4 fw-bolder animate__animated animate__fadeInDown animate__slow" >Yayasan MI Al-Ikhlas</h3>
           </div>
       </div>
 
       <div class="lc-block">
           <div editable="rich">
-              <p class="lead">Sekolah Dasar yang bernaung dibawah kementrian agama <br>
+              <p class="lead animate__animated animate__fadeInUp animate__slow">Sekolah Dasar yang bernaung dibawah kementrian agama <br>
                 Pasir Mukti | Citeureup | Jawa Barat
               </p>
               {{-- <a href="#hero2" class="icon">Selengkapnya</a> --}}
@@ -55,7 +55,7 @@
   <div class="row align-items-center">
     <div class="col-12 text-center" data-aos="fade-left" data-aos-duration="1000">
       <div class="section-title mb-3 pb-2">
-          <h1 class="title mb-2 fw-bold" style="font-size: 3em">A Place Where Talents Grow and Dreams <br> Come True </h1>
+          <h1 class="title mb-2 fw-bold" style="font-size: 3em">Al-Ikhlas Lebih Baik <br> Lebih Baik Al-Ikhlas </h1>
           {{-- <p class="text-muted para-desc mx-auto mb-0">Madrasah Ibtidaiyah Al-Ikhlas.</p> --}}
       </div>
     </div>
@@ -223,8 +223,8 @@
           </div>
           <!-- Team Details-->
           <div class="single_advisor_details_info">
-            <h6>Samantha Sarah</h6>
-            <p class="designation">Founder &amp; CEO</p>
+            <h6>Kurniasih, S.Pd.I</h6>
+            <p class="designation">Operator Sekolah MI Al-IKhlas</p>
           </div>
         </div>
       </div>
@@ -233,30 +233,30 @@
       <div class="col-12 col-sm-6 col-lg-3 mt-3">
         <div class="single_advisor_profile" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
           <!-- Team Thumb-->
-          <div class="advisor_thumb"><img src="/img/operator.png" class="img-fluid" alt="">
+          <div class="advisor_thumb"><img src="/img/BENDAHARA.png" class="img-fluid" alt="">
             <!-- Social Info-->
             <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
           </div>
           <!-- Team Details-->
           <div class="single_advisor_details_info">
-            <h6>Samantha Sarah</h6>
-            <p class="designation">Founder &amp; CEO</p>
+            <h6>Siti Saadah, S.Pd</h6>
+            <p class="designation">Bendahara MI Al-Ikhlas</p>
           </div>
         </div>
       </div>
 
       <!-- Single Advisor-->
-      <div class="col-12 col-sm-6 col-lg-3 mt-3">
+      <div class="col-12 col-sm-6 col-lg-3 mt-3" >
         <div class="single_advisor_profile" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
           <!-- Team Thumb-->
-          <div class="advisor_thumb"><img src="/img/operator.png" class="img-fluid" alt="">
+          <div class="advisor_thumb"><img src="/img/TU.png" class="img-fluid"  alt="">
             <!-- Social Info-->
             <div class="social-info"><a href="#"><i class="fa fa-facebook"></i></a><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-linkedin"></i></a></div>
           </div>
           <!-- Team Details-->
           <div class="single_advisor_details_info">
-            <h6>Samantha Sarah</h6>
-            <p class="designation">Founder &amp; CEO</p>
+            <h6>Dian Aulia</h6>
+            <p class="designation">Tata Usaha MI Al-Ikhlas</p>
           </div>
         </div>
       </div>

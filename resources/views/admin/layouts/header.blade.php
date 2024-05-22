@@ -13,11 +13,8 @@
           <i class="fas fa-expand-arrows-alt"></i>
         </a>
       </li>
-      
-      <li class="nav-item">
-        <a class="nav-link" href="/admin/logout/">
-          <i class="fas fa-sign-out-alt"></i>
-        </a>
+      <li>
+        <a href="/" class="login btn btn-primary"><i class="fas fa-user"></i> Halaman Utama</a>
       </li>
     </ul>
   </nav>

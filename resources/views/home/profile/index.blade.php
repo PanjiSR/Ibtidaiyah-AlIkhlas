@@ -1,10 +1,10 @@
 <div class="container-fluid my-5">
     <div class="container mt-5">
         <div class="row">
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-6 col-md-12 animate__animated animate__fadeInLeft animate__slow ">
                 <img src="/img/logo-profil.png" alt="">
             </div>
-            <div class="col-lg-6 col-md-12">
+            <div class="col-lg-6 col-md-12 animate__animated animate__fadeInRight animate__slow ">
                 <h2 class="text-center fw-bold">VISI</h2>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, dolores!</p>
                 <h2 class="text-center fw-bold">MISI</h2>

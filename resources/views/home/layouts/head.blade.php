@@ -21,7 +21,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     {{-- AOScroll --}}
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    
+    {{-- Animate CSS --}}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <style>
       .bd-placeholder-img {
         font-size: 1.125rem;

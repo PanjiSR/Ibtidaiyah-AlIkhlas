@@ -146,10 +146,10 @@
 
 {{-- Content --}}
 
-<div class="container bootstrap snippets bootdeys my-5">
+<div class="container bootstrap snippets bootdeys my-5 ">
     <div class="row text-center mt-5">
       <div class="col-sm-4">
-        <div class="contact-detail-box">
+        <div class="contact-detail-box animate__animated animate__fadeIn">
           <i class="fas fa-th fa-3x text-colored"></i>
           <h4>Hubungi Kami</h4>
           <abbr title="Phone"><i class="fa-solid fa-phone-flip"></i></abbr> (123) 456-7890<br>
@@ -158,7 +158,7 @@
       </div><!-- end col -->
 
       <div class="col-sm-4">
-        <div class="contact-detail-box">
+        <div class="contact-detail-box animate__animated animate__fadeIn">
           <i class="fa-solid fa-location-dot fa-3x text-colored"></i>
           <h4>Lokasi Kami</h4>
           <address>
@@ -169,12 +169,15 @@
       </div><!-- end col -->
 
       <div class="col-sm-4">
-        <div class="contact-detail-box">
-          <i class="fas fa-book fa-3x text-colored"></i>
-          <h4>Layanan 24 Jam</h4>
-
-          <p>MI Al-Ikhlas</p>
-          <h4 class="text-muted">1234 567 890</h4>
+        <div class="contact-detail-box animate__animated animate__fadeIn">
+          <i class="fas fa-square-share-nodes fa-3x text-colored"></i>
+          <h4>Media Sosial Kami</h4>
+          <div class="">
+            {{-- <p>Media Sosial</p> --}}
+            <a href="https://wa.me/+62" class="text-center mx-2" style="font-size: 2em; color:#22c55e;"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.tiktok.com/@mialikhlas.official" class="text-center mx-2" style="font-size: 2em; color:#090a0a;"><i class="fa-brands fa-tiktok"></i></a>
+            <a href="#" class="text-center mx-2" style="font-size: 2em; color:#E1306C;"><i class="fa-brands fa-instagram"></i></a>
+          </div>
         </div>
       </div><!-- end col -->
 
@@ -185,7 +188,8 @@
     <div class="row">
       <div class="col-sm-6">
         <div class="contact-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3964.0924902941624!2d106.8953899!3d-6.5099762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMzAnMzYuOSJTIDEwNsKwNTMnNDMuOCJF!5e0!3m2!1sid!2sid!4v1715408092100!5m2!1sid!2sid" class="mt-2" style="border:0; border-radius:20px; width: 100%; height: 250px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            {{-- <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3964.0924902941624!2d106.8953899!3d-6.5099762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMzAnMzYuOSJTIDEwNsKwNTMnNDMuOCJF!5e0!3m2!1sid!2sid!4v1715408092100!5m2!1sid!2sid" class="mt-2" style="border:0; border-radius:20px; width: 100%; height: 250px; " allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> --}}
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.0921976756786!2d106.89278837402937!3d-6.510013263642758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c108898f024f%3A0xd8c2e9184fe8c8b1!2sPonpes%20Al-Ikhlas!5e0!3m2!1sid!2sid!4v1716369710560!5m2!1sid!2sid" class="mt-2" style="border:0; border-radius:20px; width:100%; height:250px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </div><!-- end col -->
 

@@ -1,6 +1,6 @@
 <header>
     <!-- Fixed navbar -->
-    <nav class="navbar navbar-expand-md bg-light nav-color shadow-sm position-fixed w-100">
+    <nav class= "navbar navbar-expand-md bg-light nav-color shadow-sm position-fixed w-100">
       <div class="container-fluid mx-3">
         <a class="navbar-brand madrasah" href="/">
           <img src="/img/logo-nav-black.png" width="250" alt=""></a>

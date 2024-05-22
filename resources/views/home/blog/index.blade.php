@@ -34,18 +34,8 @@
             </div>
         </div>
         @endforeach
-    </div>
-    <div class="row mt-6 wow fadeInUp" data-wow-delay=".6s" style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
-        <div class="col-12 mb-5">
-            <div class="pagination text-small text-uppercase text-extra-dark-gray">
-                <ul>
-                    <li><a href="#!"><i class="fas fa-long-arrow-alt-left me-1 d-none d-sm-inline-block"></i> Prev</a></li>
-                    <li class="active"><a href="#!">1</a></li>
-                    <li><a href="#!">2</a></li>
-                    <li><a href="#!">3</a></li>
-                    <li><a href="#!">Next <i class="fas fa-long-arrow-alt-right ms-1 d-none d-sm-inline-block"></i></a></li>
-                </ul>
-            </div>
+        <div class="d-flex justify-content-end mb-5">
+            {{ $blog->links() }}
         </div>
     </div>
 </div>

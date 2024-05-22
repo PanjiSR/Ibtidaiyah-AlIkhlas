@@ -11,7 +11,7 @@ class HomeBlogController extends Controller
     //
     function index (){
         $data = [
-            'blog' => Blog::orderBy('created_at', 'desc')->get(),
+            'blog' => Blog::orderBy('created_at', 'desc')->paginate(6),
             'latest' => Latest::first(),
             'content' => 'home/blog/index'
         ];
