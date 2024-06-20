@@ -72,7 +72,7 @@
 .blog-aside .widget-title h3 {
   font-size: 20px;
   font-weight: 700;
-  color: #fc5356;
+  color: #22c55e;
   margin: 0;
 }
 .blog-aside .widget-author .media {
@@ -135,8 +135,9 @@
   font-size: 15px;
 }
 .blog-aside .latest-post-aside .lpa-title a {
-  color: #20247b;
+  color: #0c0c0c;
   font-weight: 600;
+  text-decoration: none
 }
 .blog-aside .latest-post-aside .lpa-meta a {
   color: #6F8BA4;
@@ -186,7 +187,7 @@
   border-bottom: 1px solid #fc5356;
 }
 .article .article-title h2 {
-  color: #20247b;
+  color: #0c0c0c;
   font-weight: 600;
 }
 .article .article-title .media {
@@ -205,7 +206,7 @@
 }
 .article .article-title .media .media-body label {
   font-weight: 600;
-  color: #fc5356;
+  color: #22c55e;
   margin: 0;
 }
 .article .article-title .media .media-body span {
@@ -218,7 +219,7 @@
 .article .article-content h4,
 .article .article-content h5,
 .article .article-content h6 {
-  color: #20247b;
+  color: #22c55e;
   font-weight: 600;
   margin-bottom: 15px;
 }
@@ -234,7 +235,7 @@
   margin: 0;
 }
 .article .article-content blockquote .blockquote-footer {
-  color: #20247b;
+  color: #22c55e;
   font-size: 16px;
 }
 .article .article-content blockquote .blockquote-footer cite {
@@ -252,7 +253,7 @@
   padding: 20px;
 }
 .article-comment h4 {
-  color: #20247b;
+  color: #22c55e;
   font-weight: 700;
   margin-bottom: 25px;
   font-size: 22px;
@@ -328,7 +329,7 @@ img {
 
 .section-title h2 {
     font-weight: 700;
-    color: #20247b;
+    color: #22c55e;
     font-size: 45px;
     margin: 0 0 15px;
     border-left: 5px solid #fc5356;
@@ -345,7 +346,7 @@ img {
     line-height: 60px;
     position: relative;
     display: inline-block;
-    color: #20247b;
+    color: #22c55e;
     background: none;
     border: none;
 }
@@ -407,13 +408,16 @@ img {
                     <div class="article-img">
                         <img src="/{{ $blog->cover }}" class="img-fluid" title="" alt="">
                     </div>
+                    <div class="back mt-3" style="font-weight: 400; color:grey">
+                      <a href="/blog" style="text-decoration:none; color:grey;">Berita & Kegiatan </a>/ Detail
+                    </div>
                     <div class="article-title">
-                        <h6><a href="#">Lifestyle</a></h6>
+                        {{-- <h6><a href="#">Lifestyle</a></h6> --}}
                         <h2> {{ $blog->title }} </h2>
                         <div class="media">
                           <div class="media-body">
                               <small><i class="fas fa-calendar-alt"></i> Dibuat pada: {{ $blog->created_at }} | Oleh: </small>
-                              <label>Rachel Roth</label>
+                              <label>ADMIN</label>
                             </div>
                         </div>
                     </div>

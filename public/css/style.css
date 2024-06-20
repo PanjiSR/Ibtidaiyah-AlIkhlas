@@ -12,6 +12,10 @@ html {
     z-index: 3;
     font-size: 1em;
     box-sizing: border-box;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navbar li a{
@@ -21,6 +25,14 @@ html {
 .nav-color {
     background-color: #f7f7f7;
     transition: all ease-in-out .1s;
+}
+
+.navbar-brand {
+margin-right: auto;
+}
+
+.navbar-toggler {
+margin-left: auto;
 }
 
 .navbar-nav a {
